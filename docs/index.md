@@ -1,27 +1,8 @@
-# Page title here
+# Simplicity First Home
 
-This is a paragraph.
+![](images/simplicity-first.png)
 
-Both [internal](README.md) and [external](https://example.com) links work.
+Have questions or feedback about the book? My email is [cwoodruff@live.com](mailto:cwoodruff@live.com).
 
-![simplicity-first.png](images/simplicity-first.png)
-
-Another paragraph with **bold**, _italic_, ~~strikethrough~~, and `code` samples.
-
----
-
-## Lists
-
-- First item
-- Second item
-- Third item
-
-1. First item
-2. Second item
-3. Third item
-
-> "Cool! This is a quotation."
-
-!!!
-Need to draw attention to something? Use an alert.
-!!!
+For the source code for the book, visit the book's GitHub repo -- [htmx-razor-workshop
+](https://github.com/cwoodruff/htmx-razor-workshop)
