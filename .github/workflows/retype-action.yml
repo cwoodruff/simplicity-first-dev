@@ -17,10 +17,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 8.0.13
-
       - uses: retypeapp/action-build@latest
 
       - uses: retypeapp/action-github-pages@latest
