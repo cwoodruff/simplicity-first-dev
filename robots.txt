@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cwoodruff.github.io/simplicity-first-dev/sitemap.xml.gz
+Sitemap: /sitemap.xml.gz
