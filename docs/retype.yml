@@ -4,8 +4,8 @@ url: https://cwoodruff.github.io/simplicity-first-dev/
 branding:
   title: Simplicity First
   label: v1
-  logo: images/gear-earth.png
-  logoDark: images/gear-earth-dark.png
+  logo: images/simplicity-first-200.png
+  logoDark: images/simplicity-first-200.png
 edit:
   repo: github.com/cwoodruff/simplicity-first-dev/
 links:
@@ -38,7 +38,7 @@ footer:
       icon: shield-check
 editor:
   enabled: false
-favicon: images/favicon.png
+favicon: images/simplicity-first.ico
 search:
   hotkeys:
     - "/"
