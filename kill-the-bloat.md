@@ -1,6 +1,6 @@
 ---
 order: 1
-icon: sparkle-fill
+icon: icon-feed-rocket
 label: Kill the Bloat
 meta:
 title: "Kill the Bloat: The Controversial Clash Between SPAs, Server-Side Rendering, and the Power of Simplicity"
