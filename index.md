@@ -2,5 +2,7 @@
 
 ![](images/simplicity-first.png)
 
-# Manifesto
+# Mission Statement
+
+_coming soon..._
 
