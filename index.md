@@ -16,5 +16,5 @@ We aim to cut out the excess and steer clear of over-engineered designs.
 
 We want to push our industry forward while ensuring clarity and purpose in every creation.
 
-Together, we are committed to delivering software that is not only user-friendly and easy to maintain.
+Together, we are committed to delivering software that is user-friendly and easy to maintain.
 
