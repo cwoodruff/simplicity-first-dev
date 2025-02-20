@@ -1,6 +1,6 @@
 # Simplicity First
 
-![banner.jpeg](images/banner.jpeg)
+![](images/banner.jpeg)
 
 # Mission Statement
 
