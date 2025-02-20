@@ -1,6 +1,6 @@
 # Simplicity First
 
-![](images/sean-oulashin-KMn4VEeEPR8-unsplash.jpg)
+<img src="images/sean-oulashin-KMn4VEeEPR8-unsplash.jpg" alt="Simplicity First" style="max-width:75%; height:auto;">
 
 # Mission Statement
 
