@@ -38,7 +38,7 @@ footer:
       icon: shield-check
 editor:
   enabled: false
-favicon: images/simplicity-first.ico
+favicon: images/favicon.ico
 search:
   hotkeys:
     - "/"
