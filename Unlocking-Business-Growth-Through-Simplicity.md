@@ -1,7 +1,7 @@
 ---
 order: 4
 icon: goal
-label: Seizing Opportunities Through Simplicity
+label: Unlocking Business Growth Through Simplicity
 meta:
 title: "Unlocking Business Growth Through Simplicity: A Simplicity-First Approach for Stakeholders and Investors"
 author: Chris Woody Woodruff
