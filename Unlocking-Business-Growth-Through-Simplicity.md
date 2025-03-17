@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 27
 icon: goal
 label: Unlocking Business Growth Through Simplicity
 meta:

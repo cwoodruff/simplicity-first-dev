@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 28
 icon: light-bulb
 label: Seizing Opportunities Through Simplicity
 meta:

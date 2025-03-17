@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 30
 icon: home-fill
 label: Home
 ---
