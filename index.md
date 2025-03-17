@@ -1,3 +1,9 @@
+---
+order: 1
+icon: home-fill
+label: Home
+---
+
 # Simplicity First
 
 ![](images/banner.jpeg)

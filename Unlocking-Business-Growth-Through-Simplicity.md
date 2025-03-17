@@ -9,8 +9,6 @@ author: Chris Woody Woodruff
 
 # Unlocking Business Growth Through Simplicity: A Simplicity-First Approach for Stakeholders and Investors
 
-#### [Chris Woody Woodruff](http://woodruff.dev)
-
 In today\'s fast-paced business environment, complexity often disguises
 itself as sophistication. Companies invest heavily in feature-rich
 solutions, extensive workflows, and intricate decision-making
@@ -223,3 +221,5 @@ complexity**.
 
 > **If a solution can't be explained in one sentence, it's too
 > complicated.**
+
+#### [Chris Woody Woodruff](http://woodruff.dev)

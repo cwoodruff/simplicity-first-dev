@@ -4,12 +4,10 @@ icon: light-bulb
 label: Seizing Opportunities Through Simplicity
 meta:
 title: "Seizing Opportunities Through Simplicity: A Simplicity-First Approach"
-author: [Chris Woody Woodruff](http://woodruff.dev)
+author: Chris Woody Woodruff
 ---
 
 # Seizing Opportunities Through Simplicity: A Simplicity-First Approach
-
-#### [Chris Woody Woodruff](http://woodruff.dev)
 
 In a world that often rewards complexity, the **Simplicity-First**
 initiative encourages us to reconsider our approach to problems,
@@ -152,3 +150,5 @@ complexity?\"**
 
 By choosing simplicity, we open the door to new possibilities. Strip
 away the noise, focus on what matters, and watch opportunities emerge.
+
+#### [Chris Woody Woodruff](http://woodruff.dev)

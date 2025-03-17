@@ -9,8 +9,6 @@ author: Chris Woody Woodruff
 
 # Kill the Bloat: The Controversial Clash Between SPAs, Server-Side Rendering, and the Power of Simplicity
 
-#### [Chris Woody Woodruff](http://woodruff.dev)
-
 Ever feel like half your development time goes to chasing down strange bugs in a colossal JavaScript stack that only a wizard could appreciate? You’re not alone. In the realm of web apps, we’re always trying to determine whether it’s better to handle everything on the server or shift as much as possible to the browser. This discussion isn’t just about technology—it’s about maintaining manageable code, keeping our sanity intact, and ensuring our users are happy. Enter the Simplicity-First philosophy, which reminds us that while fancy frameworks and cutting-edge libraries are appealing, they become useless if they overwhelm our code with excessive complexity.
 
 Simplicity-First is the sidekick that shows up with a utility belt full of best practices: naming things well, writing readable functions, and structuring elements so that future you (or your teammates) don’t have to pull out their hair. Buckle up as we embark on a journey through the history of server-side vs. client-side, explore why understanding your domain is crucial, and discover how new tools like htmx or server-first frameworks might bring peace to the galaxy.
@@ -68,3 +66,5 @@ Simplicity-First makes sure your project remains approachable. When a new develo
 At the end of the day, the verdict on server-side vs. client-side rendering is: it depends. Shocking, right? But that’s just how it goes in software. Sometimes, SSR is the no-brainer. Other times, you need the oomph that only a client-powered framework can deliver. The trick isn’t to figure out which one is universally better; it’s to figure out which approach dovetails best with your app’s domain, your team’s skill set, and your users’ expectations.
 
 Simplicity-First thinking and better practices guide you no matter which route you choose, reminding you to kill the bloat, focus on what matters, and keep the real purpose of your app front and center. When done right, both architectures can be powerful and graceful. Done poorly, both can devolve into spaghetti that costs way too much brainpower to maintain. So whether you’re an SSR purist living your best htmx life or a React buff cranking out cutting-edge SPAs, don’t forget: keep it simple, keep it clean, and don’t let the bloat win.
+
+#### [Chris Woody Woodruff](http://woodruff.dev)
