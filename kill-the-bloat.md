@@ -9,7 +9,7 @@ author: Chris Woody Woodruff
 
 # Kill the Bloat: The Controversial Clash Between SPAs, Server-Side Rendering, and the Power of Simplicity
 
-#### Chris Woody Woodruff
+#### [Chris Woody Woodruff](http://woodruff.dev)
 
 Ever feel like half your development time goes to chasing down strange bugs in a colossal JavaScript stack that only a wizard could appreciate? You’re not alone. In the realm of web apps, we’re always trying to determine whether it’s better to handle everything on the server or shift as much as possible to the browser. This discussion isn’t just about technology—it’s about maintaining manageable code, keeping our sanity intact, and ensuring our users are happy. Enter the Simplicity-First philosophy, which reminds us that while fancy frameworks and cutting-edge libraries are appealing, they become useless if they overwhelm our code with excessive complexity.
 
