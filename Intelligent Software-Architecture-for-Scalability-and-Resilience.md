@@ -1,3 +1,12 @@
+---
+order: 26
+icon: light-bulb
+label: The Simplicity Code
+meta:
+title: "The Simplicity Code: Intelligent Software Architecture for Scalability and Resilience"
+author: Chris Woody Woodruff
+---
+
 # The Simplicity Code: Intelligent Software Architecture for Scalability and Resilience
 
 During the early stages of my career, I encountered architectures that were rigid, inflexible, and so complex that only extensive documentation could help developers understand them. Often, I was the architect responsible for creating and designing these architectures, but I also faced similar challenges posed by other architects. I’m not writing this essay to claim moral superiority; rather, I want to recognize that I, too, have been the type of architect I discuss here. It's often said that when you point a finger at someone else, four fingers point back at you.
