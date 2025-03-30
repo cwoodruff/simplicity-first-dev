@@ -56,3 +56,5 @@ Additionally, managing architectural drift is a significant challenge. As system
 Intelligent software architecture focuses on creating systems that are adaptable, resilient, and scalable, all while adhering to the principles of simplicity. By emphasizing modularity, scalability, adaptability, and maintainability, architects can develop systems that are both efficient and robust. As modern software systems grow increasingly complex, the importance of intelligent architecture has never been more critical.
 
 Embracing these principles allows systems to evolve gracefully over time, providing a strong foundation for future innovations. The Simplicity-First manifesto acts as a guiding light in this endeavor, encouraging architects and developers to prioritize simplicity without sacrificing functionality. Intelligent architecture is not a one-time achievement; it is an ongoing journey that demands continuous refinement and adaptation.
+
+#### [Chris Woody Woodruff](http://woodruff.dev)
