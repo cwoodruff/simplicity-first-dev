@@ -17,7 +17,7 @@ The importance of intelligent architecture is more significant than ever, given 
 
 This essay aims to explore the principles, strategies, and patterns necessary for building intelligent software architectures. It will focus on how these principles align with the Simplicity-First manifesto and provide practical examples and use cases to demonstrate their application.
 
-<img align="right" height="384" src="./images/Simplicity-Code-Horror.png" title="Simplicity-First Manifesto" width="256"/>
+![](images/Simplicity-Code-Horror.png)-
 
 ## Key Principles for Intelligent Software Architecture
 
