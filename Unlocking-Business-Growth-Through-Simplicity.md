@@ -191,6 +191,8 @@ step by step.
 - **Basecamp:** Prioritized a minimalist feature set, avoiding the
   complexity of traditional project management tools.
 
+- **Dropbox:** Focused on synchronizing a single folder and added more features and functionality later
+
 ## Enterprise Software Adoption:
 
 - A **lean ERP implementation** focusing on core processes led to **30%
