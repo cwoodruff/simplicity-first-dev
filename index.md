@@ -4,9 +4,7 @@ icon: home-fill
 label: Home
 ---
 
-# Simplicity First
-
-![](images/banner.jpeg)
+![](images/leaderboard_banner.png)
 
 # Mission Statement
 
