@@ -22,6 +22,9 @@ We want to push our industry forward while ensuring clarity and purpose in every
 
 Together, we are committed to delivering software that is user-friendly and easy to maintain.
 
+---
+# Simplicity-First: Rethinking Software Architecture for a Complex World
+## Table of Contents
 <table>
     <thead>
         <tr>
