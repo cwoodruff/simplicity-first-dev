@@ -17,6 +17,11 @@ links:
     link: https://github.com/cwoodruff/simplicity-first-dev/issues
     icon: comment-discussion
     target: blank
+    
+  - text: Chris Woody Woodruff's Blog
+    link: https://woodruff.dev
+    icon: feed-person
+    target: blank
 
   - text: Bluesky
     link: https://bsky.app/profile/woodruff.dev
