@@ -5,6 +5,7 @@ label: Simplicity Meets Sustainability
 meta:
 title: "Simplicity Meets Sustainability: Aligning the Simplicity-First Initiative with Green Software Principles"
 author: Chris Woody Woodruff
+visibility: protected
 ---
 
 In a world increasingly shaped by software, the principles guiding how we build and maintain digital systems carry immense weight, not just for performance or usability, but for the planet. Two movements at the forefront of responsible software design are the **Simplicity-First initiative**, which champions clarity and minimalism in software architecture, and the **Green Software movement**, which aims to reduce the environmental impact of technology. While they arise from different motivations, these philosophies are deeply complementary. The Simplicity-First initiative naturally aligns with and supports the principles of Green Software, promoting efficient, ethical, and environmentally responsible technology.
@@ -70,5 +71,6 @@ There are exciting opportunities for deeper collaboration between the Simplicity
 # Conclusion
 
 Simplicity in software design is more than a path to elegance or efficiency. It's a pathway to environmental responsibility. The Simplicity-First initiative offers a robust framework for reducing complexity, and in doing so, it supports Green Software's goals: building better systems for people and the planet. As software professionals, we are stewards of both technology and the world it shapes. By embracing simplicity, we do more than build better software; we help build a better future.
+
 
 #### [Chris Woody Woodruff](http://woodruff.dev)
