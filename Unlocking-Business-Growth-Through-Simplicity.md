@@ -5,6 +5,7 @@ label: Unlocking Business Growth Through Simplicity
 meta:
 title: "Unlocking Business Growth Through Simplicity: A Simplicity-First Approach for Stakeholders and Investors"
 author: Chris Woody Woodruff
+visibility: protected
 ---
 
 # Unlocking Business Growth Through Simplicity: A Simplicity-First Approach for Stakeholders and Investors
