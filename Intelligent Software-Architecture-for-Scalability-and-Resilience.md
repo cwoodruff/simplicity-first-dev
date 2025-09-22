@@ -5,6 +5,7 @@ label: The Simplicity Code
 meta:
 title: "The Simplicity Code: Intelligent Software Architecture for Scalability and Resilience"
 author: Chris Woody Woodruff
+visibility: protected
 ---
 
 # The Simplicity Code: Intelligent Software Architecture for Scalability and Resilience
