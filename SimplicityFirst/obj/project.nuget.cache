@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U18G56OuNw0=",
+  "dgSpecHash": "8UPEXQOZ35w=",
   "success": true,
   "projectFilePath": "/Volumes/extra/Git/simplicity-first-dev/SimplicityFirst/SimplicityFirst.csproj",
-  "expectedPackageFiles": [
-    "/Users/cwoodruff/.nuget/packages/microsoft.netcore.app.ref/9.0.11/microsoft.netcore.app.ref.9.0.11.nupkg.sha512",
-    "/Users/cwoodruff/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.11/microsoft.aspnetcore.app.ref.9.0.11.nupkg.sha512",
-    "/Users/cwoodruff/.nuget/packages/microsoft.netcore.app.host.osx-arm64/9.0.11/microsoft.netcore.app.host.osx-arm64.9.0.11.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
