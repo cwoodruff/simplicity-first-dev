@@ -1,0 +1,755 @@
+@page
+@model IndexModel
+
+<!-- ============================================================ -->
+<!-- 1. NAVIGATION BAR                                            -->
+<!-- ============================================================ -->
+<nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" aria-label="Primary navigation">
+    <div class="max-w-content mx-auto px-6 py-4 flex items-center justify-between">
+        <!-- Logo + Brand -->
+        <a href="#hero" class="flex items-center gap-3 group">
+            <img src="/images/simplicityfirst.png" alt="Simplicity-First logo — red diamond with white S" width="40" height="40" class="w-10 h-10" />
+            <span class="font-display text-2xl tracking-wide text-white group-hover:text-sf-red transition-colors">Simplicity-First</span>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <div class="hidden md:flex items-center gap-8">
+            <a href="#hero" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">Home</a>
+            <a href="#philosophy" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">Philosophy</a>
+            <a href="#book" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">The Book</a>
+            <a href="#filters" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">Three Filters</a>
+            <a href="#essays" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">Essays</a>
+            <a href="#connect" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">Connect</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="hamburger-line block w-6 h-0.5 bg-white"></span>
+            <span class="hamburger-line block w-6 h-0.5 bg-white"></span>
+            <span class="hamburger-line block w-6 h-0.5 bg-white"></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="mobile-menu fixed inset-0 z-40 bg-sf-black/98 flex flex-col items-center justify-center gap-8 md:hidden" aria-label="Mobile navigation">
+    <a href="#hero" class="font-display text-3xl tracking-wide text-white hover:text-sf-red transition-colors">Home</a>
+    <a href="#philosophy" class="font-display text-3xl tracking-wide text-white hover:text-sf-red transition-colors">Philosophy</a>
+    <a href="#book" class="font-display text-3xl tracking-wide text-white hover:text-sf-red transition-colors">The Book</a>
+    <a href="#filters" class="font-display text-3xl tracking-wide text-white hover:text-sf-red transition-colors">Three Filters</a>
+    <a href="#essays" class="font-display text-3xl tracking-wide text-white hover:text-sf-red transition-colors">Essays</a>
+    <a href="#connect" class="font-display text-3xl tracking-wide text-white hover:text-sf-red transition-colors">Connect</a>
+</div>
+
+<main id="main-content">
+
+    <!-- ============================================================ -->
+    <!-- 2. HERO SECTION                                              -->
+    <!-- ============================================================ -->
+    <section id="hero" class="hero-pattern relative min-h-screen flex items-center pt-20 overflow-hidden" aria-label="Hero">
+        <!-- Diagonal geometric accent -->
+        <div class="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none" style="background: linear-gradient(135deg, transparent 40%, #E31B23 40%, #E31B23 41%, transparent 41%);"></div>
+        <div class="absolute bottom-20 left-10 opacity-10 pointer-events-none">
+            <div class="diamond" style="width:80px;height:80px;"></div>
+        </div>
+
+        <div class="max-w-content mx-auto px-6 py-20 lg:py-32">
+            <div class="lg:flex lg:items-center lg:gap-16">
+                <!-- Logo (large, left on desktop) -->
+                <div class="hidden lg:block lg:flex-shrink-0 animate-on-scroll">
+                    <img src="/images/simplicityfirst.png" alt="Simplicity-First logo" width="280" height="280" class="w-64 xl:w-72" />
+                </div>
+
+                <!-- Text content -->
+                <div class="lg:flex-1">
+                    <div class="lg:hidden flex justify-center mb-10 animate-on-scroll">
+                        <img src="/images/simplicityfirst.png" alt="Simplicity-First logo" width="180" height="180" class="w-44" />
+                    </div>
+
+                    <h1 class="font-display text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight leading-none animate-on-scroll">
+                        Kill the <span class="text-sf-red">Bloat.</span>
+                    </h1>
+
+                    <p class="mt-6 text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl animate-on-scroll stagger-1">
+                        Simplicity-First is a movement for developers, architects, and tech leaders who believe software should be clear, maintainable, and built for humans &mdash; not for r&eacute;sum&eacute;s.
+                    </p>
+
+                    <div class="mt-8 text-base text-sf-muted leading-relaxed max-w-2xl animate-on-scroll stagger-2">
+                        <p>We advocate for clear and efficient solutions that eliminate unnecessary complexity. Using intelligent software architecture, practical design, and sharp engineering practices, we equip teams to prioritize simplicity in their projects. We make use of readily available technology and open-source collaboration. We aim to cut out the excess and steer clear of over-engineered designs. Together, we are committed to delivering software that is user-friendly and easy to maintain.</p>
+                    </div>
+
+                    <div class="mt-10 flex flex-col sm:flex-row gap-4 animate-on-scroll stagger-3">
+                        <a href="#philosophy" class="inline-flex items-center justify-center px-8 py-4 bg-sf-red hover:bg-sf-red-dark text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                            Explore the Philosophy &#8595;
+                        </a>
+                        <a href="#book" class="inline-flex items-center justify-center px-8 py-4 border border-sf-border hover:border-sf-red text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                            Read the Book Chapters &#8595;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 3. PHILOSOPHY SECTION                                        -->
+    <!-- ============================================================ -->
+    <section id="philosophy" class="relative py-24 lg:py-32" aria-label="The Simplicity-First Philosophy">
+        <div class="max-w-content mx-auto px-6">
+            <!-- Section Header -->
+            <div class="animate-on-scroll">
+                <div class="accent-line mb-6"></div>
+                <h2 class="font-display text-5xl md:text-6xl tracking-tight">The Simplicity-First Philosophy</h2>
+            </div>
+
+            <!-- Philosophy Cards -->
+            <div class="mt-16 space-y-16">
+
+                <!-- The Complexity Trap -->
+                <div class="animate-on-scroll lg:flex lg:gap-12 lg:items-start">
+                    <div class="lg:w-1/3 mb-4 lg:mb-0">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="diamond"></span>
+                            <h3 class="font-display text-3xl md:text-4xl tracking-tight text-sf-red">What is the Complexity Trap?</h3>
+                        </div>
+                    </div>
+                    <div class="lg:w-2/3">
+                        <blockquote class="text-lg md:text-xl text-gray-300 leading-relaxed border-l-2 border-sf-red pl-6">
+                            The Complexity Trap is a self-reinforcing cycle where teams add layers, abstractions, services, and tools in the name of flexibility, scalability, or modernity &mdash; and end up with systems nobody fully understands or can safely change. Each addition seems reasonable in isolation. A new abstraction layer here. A message queue there. A microservice to handle that one thing that might need to scale independently someday. And then, six months later, nobody can ship a feature without touching seven repositories, consulting three different teams, and running a deployment pipeline that takes longer than the actual code change.
+                        </blockquote>
+                    </div>
+                </div>
+
+                <hr class="border-sf-border" />
+
+                <!-- The Core Insight -->
+                <div class="animate-on-scroll lg:flex lg:gap-12 lg:items-start">
+                    <div class="lg:w-1/3 mb-4 lg:mb-0">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="diamond"></span>
+                            <h3 class="font-display text-3xl md:text-4xl tracking-tight text-sf-red">The Core Insight</h3>
+                        </div>
+                    </div>
+                    <div class="lg:w-2/3">
+                        <blockquote class="text-lg md:text-xl text-gray-300 leading-relaxed border-l-2 border-sf-red pl-6">
+                            Complexity isn't a sign of incompetence. It's frequently a sign of intelligence applied without the right constraints. The smartest engineers share a common trait: they're suspicious of complexity. They treat every new dependency as a cost to be justified, not a feature to be celebrated.
+                        </blockquote>
+                    </div>
+                </div>
+
+                <hr class="border-sf-border" />
+
+                <!-- What Simplicity-First Means -->
+                <div class="animate-on-scroll lg:flex lg:gap-12 lg:items-start">
+                    <div class="lg:w-1/3 mb-4 lg:mb-0">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="diamond"></span>
+                            <h3 class="font-display text-3xl md:text-4xl tracking-tight text-sf-red">What Simplicity-First Means</h3>
+                        </div>
+                    </div>
+                    <div class="lg:w-2/3">
+                        <blockquote class="text-lg md:text-xl text-gray-300 leading-relaxed border-l-2 border-sf-red pl-6">
+                            Simplicity-First means starting simple, evolving incrementally, and adding complexity only when it demonstrably pays for itself. It means keeping architecture aligned with real needs by focusing on actual requirements rather than hypothetical scenarios. Every component earns its place. Every abstraction pays for itself. Every dependency gets justified.
+                        </blockquote>
+                    </div>
+                </div>
+
+                <hr class="border-sf-border" />
+
+                <!-- The Operational Definition -->
+                <div class="animate-on-scroll lg:flex lg:gap-12 lg:items-start">
+                    <div class="lg:w-1/3 mb-4 lg:mb-0">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="diamond"></span>
+                            <h3 class="font-display text-3xl md:text-4xl tracking-tight text-sf-red">The Operational Definition</h3>
+                        </div>
+                    </div>
+                    <div class="lg:w-2/3">
+                        <blockquote class="text-lg md:text-xl text-gray-300 leading-relaxed border-l-2 border-sf-red pl-6">
+                            A system is simple if a tired, stressed, unfamiliar engineer can understand it well enough to fix it quickly. This definition has teeth. It does not care about elegant abstractions or clever patterns. It cares about one thing: can this system be operated under stress by normal humans?
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 4. THE THREE FILTERS SECTION                                 -->
+    <!-- ============================================================ -->
+    <section id="filters" class="relative py-24 lg:py-32 bg-sf-surface" aria-label="The Three Filters">
+        <div class="max-w-content mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center animate-on-scroll">
+                <div class="accent-line mx-auto mb-6"></div>
+                <h2 class="font-display text-5xl md:text-6xl tracking-tight">Three Filters. One Goal.</h2>
+                <p class="mt-4 text-lg text-sf-muted max-w-2xl mx-auto">The Simplicity-First approach is built on three practical filters for evaluating every architectural decision.</p>
+            </div>
+
+            <!-- Filter Cards -->
+            <div class="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+                <!-- Filter 1: The 2 AM Test -->
+                <div class="card-hover bg-sf-black border border-sf-border rounded-sm p-8 animate-on-scroll stagger-1">
+                    <div class="border-t-2 border-sf-red -mt-8 pt-8 -mx-8 px-8">
+                        <!-- Clock SVG Icon -->
+                        <div class="w-12 h-12 mb-6 text-sf-red">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-12 h-12" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-3xl tracking-tight mb-3">The 2 AM Test</h3>
+                        <p class="text-sf-red font-mono text-sm mb-4">Could a developer understand, troubleshoot, and resolve a production issue in this system at 2 AM, under stress, with limited support?</p>
+                        <p class="text-gray-400 leading-relaxed">
+                            The 2 AM Test is the operational definition of simplicity. It breaks down into four dimensions: Discoverability (can you find the problem?), Traceability (can you follow the request?), Change Safety (can you roll back safely?), and Cognitive Load (can someone who didn't write it fix it?). If your architecture can't survive a 2 AM wake-up call, it has failed the only test that really matters in production.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Filter 2: The Half-Rule -->
+                <div class="card-hover bg-sf-black border border-sf-border rounded-sm p-8 animate-on-scroll stagger-2">
+                    <div class="border-t-2 border-sf-red -mt-8 pt-8 -mx-8 px-8">
+                        <!-- Half Circle SVG Icon -->
+                        <div class="w-12 h-12 mb-6 text-sf-red">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-12 h-12" aria-hidden="true">
+                                <path d="M12 2a10 10 0 0 1 0 20" />
+                                <line x1="12" y1="2" x2="12" y2="22" stroke-dasharray="2 2" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-3xl tracking-tight mb-3">The Half-Rule</h3>
+                        <p class="text-sf-red font-mono text-sm mb-4">Are we building only what we know we need?</p>
+                        <p class="text-gray-400 leading-relaxed">
+                            Build half of what you think you need. Treat the rest as a hypothesis to be tested, not a requirement to be fulfilled. Every team has a complexity budget &mdash; a real constraint on what your organization can handle. When teams overbuild early, they spend that budget on imaginary problems. The Half-Rule protects your budget for problems you know are real.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Filter 3: Primary Path First -->
+                <div class="card-hover bg-sf-black border border-sf-border rounded-sm p-8 animate-on-scroll stagger-3">
+                    <div class="border-t-2 border-sf-red -mt-8 pt-8 -mx-8 px-8">
+                        <!-- Arrow/Path SVG Icon -->
+                        <div class="w-12 h-12 mb-6 text-sf-red">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-12 h-12" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="14 7 19 12 14 17" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-3xl tracking-tight mb-3">Primary Path First</h3>
+                        <p class="text-sf-red font-mono text-sm mb-4">Are we designing for the 95% case or getting distracted by edge cases?</p>
+                        <p class="text-gray-400 leading-relaxed">
+                            Make the 80% path boring, resilient, and fast to understand. Keep the primary path simple. Contain edge cases behind seams. When the primary path is boring, everything else becomes easier. Testing becomes straightforward. Debugging becomes faster. Onboarding becomes smoother. Edge cases are real &mdash; the question is not whether to handle them, but where.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 5. THE BOOK SECTION                                          -->
+    <!-- ============================================================ -->
+    <section id="book" class="relative py-24 lg:py-32" aria-label="Software Architecture Made Simple — The Book">
+        <div class="max-w-content mx-auto px-6">
+            <!-- Section Header -->
+            <div class="animate-on-scroll">
+                <div class="accent-line mb-6"></div>
+                <h2 class="font-display text-5xl md:text-6xl tracking-tight">Software Architecture Made Simple</h2>
+                <p class="mt-4 text-lg text-sf-muted max-w-3xl">The upcoming book that puts the Simplicity-First philosophy into practice. Six parts. Twenty-five chapters. A complete escape plan from the Complexity Trap.</p>
+            </div>
+
+            <!-- Book TOC Accordion -->
+            <div class="mt-16 space-y-2">
+
+                <!-- Part 1 -->
+                <div class="border border-sf-border rounded-sm animate-on-scroll">
+                    <button class="accordion-trigger w-full flex items-center justify-between p-5 text-left hover:bg-sf-surface/50 transition-colors" aria-expanded="false" aria-controls="part-1">
+                        <span class="font-display text-2xl tracking-tight">Part 1: The Problem with Complexity</span>
+                        <svg class="accordion-icon w-5 h-5 text-sf-red flex-shrink-0 ml-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
+                    </button>
+                    <div id="part-1" class="accordion-content">
+                        <div class="px-5 pb-5 space-y-3">
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">01</span> The Complexity Trap in Modern Software</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">02</span> The Illusion of Future-Proofing</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">03</span> The 2 AM Test</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div class="border border-sf-border rounded-sm animate-on-scroll">
+                    <button class="accordion-trigger w-full flex items-center justify-between p-5 text-left hover:bg-sf-surface/50 transition-colors" aria-expanded="false" aria-controls="part-2">
+                        <span class="font-display text-2xl tracking-tight">Part 2: The Simplicity-First Mindset</span>
+                        <svg class="accordion-icon w-5 h-5 text-sf-red flex-shrink-0 ml-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
+                    </button>
+                    <div id="part-2" class="accordion-content">
+                        <div class="px-5 pb-5 space-y-3">
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">04</span> The Half-Rule of Simplicity</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">05</span> Green Software Starts at the Keyboard</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">06</span> Stop Designing for Edge Cases First</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div class="border border-sf-border rounded-sm animate-on-scroll">
+                    <button class="accordion-trigger w-full flex items-center justify-between p-5 text-left hover:bg-sf-surface/50 transition-colors" aria-expanded="false" aria-controls="part-3">
+                        <span class="font-display text-2xl tracking-tight">Part 3: Practical Simplicity in Architecture</span>
+                        <svg class="accordion-icon w-5 h-5 text-sf-red flex-shrink-0 ml-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
+                    </button>
+                    <div id="part-3" class="accordion-content">
+                        <div class="px-5 pb-5 space-y-3">
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">07</span> Modular Monoliths over Microservice Sprawl</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">08</span> Scaling Smarter, Not Bigger</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">09</span> Making Legacy Work for You</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">10</span> Simplicity in the Cloud</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 4 -->
+                <div class="border border-sf-border rounded-sm animate-on-scroll">
+                    <button class="accordion-trigger w-full flex items-center justify-between p-5 text-left hover:bg-sf-surface/50 transition-colors" aria-expanded="false" aria-controls="part-4">
+                        <span class="font-display text-2xl tracking-tight">Part 4: Simplicity in Practice</span>
+                        <svg class="accordion-icon w-5 h-5 text-sf-red flex-shrink-0 ml-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
+                    </button>
+                    <div id="part-4" class="accordion-content">
+                        <div class="px-5 pb-5 space-y-3">
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">11</span> Teaching Simplicity</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">12</span> Simplicity in Tooling and Workflow</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">13</span> Debugging and Maintenance Made Simple</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">14</span> Simplicity in Team Communication</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">15</span> Simplicity in Decision-Making</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 5 -->
+                <div class="border border-sf-border rounded-sm animate-on-scroll">
+                    <button class="accordion-trigger w-full flex items-center justify-between p-5 text-left hover:bg-sf-surface/50 transition-colors" aria-expanded="false" aria-controls="part-5">
+                        <span class="font-display text-2xl tracking-tight">Part 5: The Green Connection</span>
+                        <svg class="accordion-icon w-5 h-5 text-sf-red flex-shrink-0 ml-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
+                    </button>
+                    <div id="part-5" class="accordion-content">
+                        <div class="px-5 pb-5 space-y-3">
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">16</span> Why Simple Software is Green Software</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">17</span> Measuring the Impact of Simplicity</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">18</span> Designing for Efficiency, Not Waste</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">19</span> Case Studies in Green Simplicity</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 6 -->
+                <div class="border border-sf-border rounded-sm animate-on-scroll">
+                    <button class="accordion-trigger w-full flex items-center justify-between p-5 text-left hover:bg-sf-surface/50 transition-colors" aria-expanded="false" aria-controls="part-6">
+                        <span class="font-display text-2xl tracking-tight">Part 6: AI Through the Lens of Simplicity</span>
+                        <svg class="accordion-icon w-5 h-5 text-sf-red flex-shrink-0 ml-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
+                    </button>
+                    <div id="part-6" class="accordion-content">
+                        <div class="px-5 pb-5 space-y-3">
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">20</span> AI as an Amplifier of Simplicity (or Complexity)</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">21</span> Human-In-The-Loop Architecture</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">22</span> AI-Driven Construction, the Simple Way</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 7 -->
+                <div class="border border-sf-border rounded-sm animate-on-scroll">
+                    <button class="accordion-trigger w-full flex items-center justify-between p-5 text-left hover:bg-sf-surface/50 transition-colors" aria-expanded="false" aria-controls="part-7">
+                        <span class="font-display text-2xl tracking-tight">Part 7: The Future of Simple</span>
+                        <svg class="accordion-icon w-5 h-5 text-sf-red flex-shrink-0 ml-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9" /></svg>
+                    </button>
+                    <div id="part-7" class="accordion-content">
+                        <div class="px-5 pb-5 space-y-3">
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">23</span> AI, Rust, and the Next Wave of Tools</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">24</span> Craftsmanship over Trends</div>
+                            <div class="flex items-center gap-3 text-gray-300"><span class="font-mono text-sf-red text-sm w-6">25</span> The Simplicity-First Playbook</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter Highlight Cards -->
+            <div class="mt-20">
+                <h3 class="font-display text-3xl tracking-tight mb-10 animate-on-scroll">Chapter Previews</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <!-- Chapter 1 -->
+                    <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll">
+                        <div class="flex items-start gap-4">
+                            <span class="font-display text-4xl text-sf-red leading-none">01</span>
+                            <div>
+                                <h4 class="font-display text-xl tracking-tight mb-3">The Complexity Trap in Modern Software</h4>
+                                <p class="text-gray-400 text-sm leading-relaxed">It's 10:47 AM on a Tuesday, and Marcus has been staring at his screen for three hours. He started the morning with a simple task: add a loading spinner to a button. Somewhere between breakfast and his third cup of coffee, he found himself twelve layers deep in a JavaScript stack. His project has 3,247 dependencies. The build pipeline runs for fourteen minutes. And nobody on the team can explain what happens when a user clicks the checkout button. Welcome to the Complexity Trap.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chapter 2 -->
+                    <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll">
+                        <div class="flex items-start gap-4">
+                            <span class="font-display text-4xl text-sf-red leading-none">02</span>
+                            <div>
+                                <h4 class="font-display text-xl tracking-tight mb-3">The Illusion of Future-Proofing</h4>
+                                <p class="text-gray-400 text-sm leading-relaxed">Future-proofing is one of the most compelling arguments for adding complexity &mdash; and one of the most dangerous. Teams build elaborate architectures to accommodate hypothetical scenarios that never materialize. The result is brittleness posing as flexibility. Future-proofing tends to freeze today's guesses in concrete. When reality moves, your supposedly flexible architecture becomes a cage. The flexibility was always an illusion; only the complexity was real.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chapter 3 -->
+                    <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll">
+                        <div class="flex items-start gap-4">
+                            <span class="font-display text-4xl text-sf-red leading-none">03</span>
+                            <div>
+                                <h4 class="font-display text-xl tracking-tight mb-3">The 2 AM Test</h4>
+                                <p class="text-gray-400 text-sm leading-relaxed">Your phone buzzes at 2 AM. PagerDuty. Production alert. Critical severity. You're staring at a system you didn't write. The original architect left eight months ago. The documentation is aspirational. You have thirty minutes to figure out what's wrong. This moment is where the truth about your software comes out. The 2 AM Test is the operational definition of simplicity.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chapter 4 -->
+                    <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll">
+                        <div class="flex items-start gap-4">
+                            <span class="font-display text-4xl text-sf-red leading-none">04</span>
+                            <div>
+                                <h4 class="font-display text-xl tracking-tight mb-3">The Half-Rule of Simplicity</h4>
+                                <p class="text-gray-400 text-sm leading-relaxed">Rachel had built exactly what her team asked for. The architecture diagram looked impressive. The code was clean. The test coverage was high. And the system was strangling the team. Six months after launch, adding a simple feature took three months. The problem wasn't skill &mdash; it was that every change had to navigate through unused complexity. Build half of what you think you need. Treat the rest as a hypothesis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chapter 5 -->
+                    <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll">
+                        <div class="flex items-start gap-4">
+                            <span class="font-display text-4xl text-sf-red leading-none">05</span>
+                            <div>
+                                <h4 class="font-display text-xl tracking-tight mb-3">Green Software Starts at the Keyboard</h4>
+                                <p class="text-gray-400 text-sm leading-relaxed">David's twelve microservices cost forty-three thousand dollars a month for fewer than two hundred users. But the cost that troubled him more: those services were running on physical machines consuming physical electricity generated by physical power plants, twenty-four hours a day. The complexity that made his system expensive to operate also made it expensive for the planet. Simplicity-First is green by default.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chapter 6 -->
+                    <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll">
+                        <div class="flex items-start gap-4">
+                            <span class="font-display text-4xl text-sf-red leading-none">06</span>
+                            <div>
+                                <h4 class="font-display text-xl tracking-tight mb-3">Stop Designing for Edge Cases First</h4>
+                                <p class="text-gray-400 text-sm leading-relaxed">Elena's payment system could handle anything &mdash; currency conversion for 147 countries, fraud detection for patterns nobody had observed, retry logic for seventeen failure scenarios. There was just one problem: processing a simple domestic credit card payment took four thousand lines of code to trace. The primary path had become invisible, buried under layers of edge-case handling.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book CTA -->
+            <div class="mt-16 text-center animate-on-scroll">
+                <a href="#connect" class="inline-flex items-center justify-center px-8 py-4 bg-sf-red hover:bg-sf-red-dark text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                    Get Notified When the Book Launches
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 6. KEY CONCEPTS SECTION                                      -->
+    <!-- ============================================================ -->
+    <section id="concepts" class="relative py-24 lg:py-32 bg-sf-surface" aria-label="Key Concepts">
+        <div class="max-w-content mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center animate-on-scroll">
+                <div class="accent-line mx-auto mb-6"></div>
+                <h2 class="font-display text-5xl md:text-6xl tracking-tight">Ideas That Cut Through the Noise</h2>
+            </div>
+
+            <!-- Concept Blocks -->
+            <div class="mt-16 space-y-0">
+
+                <!-- The Complexity Budget -->
+                <div class="py-12 border-b border-sf-border animate-on-scroll">
+                    <div class="flex items-start gap-4 mb-4">
+                        <span class="diamond mt-2 flex-shrink-0"></span>
+                        <h3 class="font-display text-3xl tracking-tight">The Complexity Budget</h3>
+                    </div>
+                    <p class="text-xl md:text-2xl text-gray-300 leading-relaxed font-light max-w-4xl ml-7">
+                        Every team has a complexity budget. This is not a metaphor. It is a real constraint on what your organization can handle. Complexity costs you in cognition, operations, latency, and coordination. When teams overbuild early, they spend complexity budget on imaginary problems. Then real problems arrive and the budget is spent.
+                    </p>
+                </div>
+
+                <!-- The Psychology of More -->
+                <div class="py-12 border-b border-sf-border animate-on-scroll">
+                    <div class="flex items-start gap-4 mb-4">
+                        <span class="diamond mt-2 flex-shrink-0"></span>
+                        <h3 class="font-display text-3xl tracking-tight">The Psychology of More</h3>
+                    </div>
+                    <p class="text-xl md:text-2xl text-gray-300 leading-relaxed font-light max-w-4xl ml-7">
+                        If building half is so sensible, why does every team build more than they need? The fear of looking unprepared. The excitement of technology. The illusion of professionalism. The activity trap of filling time with work. The Half-Rule provides a check on all of these.
+                    </p>
+                </div>
+
+                <!-- Future-Aware, Not Future-Proof -->
+                <div class="py-12 border-b border-sf-border animate-on-scroll">
+                    <div class="flex items-start gap-4 mb-4">
+                        <span class="diamond mt-2 flex-shrink-0"></span>
+                        <h3 class="font-display text-3xl tracking-tight">Future-Aware, Not Future-Proof</h3>
+                    </div>
+                    <p class="text-xl md:text-2xl text-gray-300 leading-relaxed font-light max-w-4xl ml-7">
+                        Future-proofing pretends you can predict the future and lock it in. Future-aware design assumes you cannot predict the future, so you design for changeability. Future-proofing adds complexity in hopes of avoiding change. Future-aware design embraces simplicity because it expects change.
+                    </p>
+                </div>
+
+                <!-- Edge Case Colonization -->
+                <div class="py-12 border-b border-sf-border animate-on-scroll">
+                    <div class="flex items-start gap-4 mb-4">
+                        <span class="diamond mt-2 flex-shrink-0"></span>
+                        <h3 class="font-display text-3xl tracking-tight">Edge Case Colonization</h3>
+                    </div>
+                    <p class="text-xl md:text-2xl text-gray-300 leading-relaxed font-light max-w-4xl ml-7">
+                        Edge cases do not stay contained. They spread through the codebase like vines, wrapping around the primary path until the original shape is unrecognizable. The architecture now teaches exceptions before it teaches rules. This is backwards.
+                    </p>
+                </div>
+
+                <!-- The Four Anti-Patterns -->
+                <div class="py-12 border-b border-sf-border animate-on-scroll">
+                    <div class="flex items-start gap-4 mb-4">
+                        <span class="diamond mt-2 flex-shrink-0"></span>
+                        <h3 class="font-display text-3xl tracking-tight">The Four Anti-Patterns</h3>
+                    </div>
+                    <p class="text-xl md:text-2xl text-gray-300 leading-relaxed font-light max-w-4xl ml-7">
+                        Premature Microservices. Over-Generalized Abstractions. Configuration Explosion. The JavaScript Dependency Avalanche. Each justified by future-proofing logic. Each causing real damage. The diagnostic question: &ldquo;What concrete present-day requirement justified this?&rdquo;
+                    </p>
+                </div>
+
+                <!-- Domain Mastery -->
+                <div class="py-12 animate-on-scroll">
+                    <div class="flex items-start gap-4 mb-4">
+                        <span class="diamond mt-2 flex-shrink-0"></span>
+                        <h3 class="font-display text-3xl tracking-tight">Domain Mastery</h3>
+                    </div>
+                    <p class="text-xl md:text-2xl text-gray-300 leading-relaxed font-light max-w-4xl ml-7">
+                        Software exists to solve problems for real people in real domains. The best solutions highlight that domain and show it respect. Any code that doesn't connect back to domain logic in a clear way should raise an eyebrow.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 7. ESSAYS SECTION                                            -->
+    <!-- ============================================================ -->
+    <section id="essays" class="relative py-24 lg:py-32" aria-label="Essays and Perspectives">
+        <div class="max-w-content mx-auto px-6">
+            <!-- Section Header -->
+            <div class="animate-on-scroll">
+                <div class="accent-line mb-6"></div>
+                <h2 class="font-display text-5xl md:text-6xl tracking-tight">Essays &amp; Perspectives</h2>
+                <p class="mt-4 text-lg text-sf-muted max-w-3xl">Deeper explorations of Simplicity-First thinking across technology, business, and strategy.</p>
+            </div>
+
+            <!-- Essay Cards Grid -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- Essay 1 -->
+                <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll">
+                    <h3 class="font-display text-xl tracking-tight mb-3">Kill the Bloat: The Controversial Clash Between SPAs, Server-Side Rendering, and the Power of Simplicity</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Ever feel like half your development time goes to chasing down strange bugs in a colossal JavaScript stack that only a wizard could appreciate? Enter the Simplicity-First philosophy, which reminds us that while fancy frameworks and cutting-edge libraries are appealing, they become useless if they overwhelm our code with excessive complexity.</p>
+                    <a href="#" class="text-sf-red text-sm font-semibold hover:underline">Read More &rarr;</a>
+                </div>
+
+                <!-- Essay 2 -->
+                <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll">
+                    <h3 class="font-display text-xl tracking-tight mb-3">The Simplicity Code: Intelligent Software Architecture for Scalability and Resilience</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Intelligent Software Architecture involves designing software systems that are adaptable, efficient, and capable of responding intelligently to changing requirements. Unlike approaches that rely on overly complex systems to appear intelligent, true intelligence in architecture emphasizes simplicity, maintainability, and robustness.</p>
+                    <a href="#" class="text-sf-red text-sm font-semibold hover:underline">Read More &rarr;</a>
+                </div>
+
+                <!-- Essay 3 -->
+                <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll">
+                    <h3 class="font-display text-xl tracking-tight mb-3">Seizing Opportunities Through Simplicity: A Simplicity-First Approach</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Simplicity is frequently misunderstood as a lack of depth; however, it genuinely serves as a powerful tool for clarity, agility, and efficiency. By embracing simplicity, we create opportunities to recognize and seize chances that might otherwise remain concealed beneath layers of unnecessary complexity.</p>
+                    <a href="#" class="text-sf-red text-sm font-semibold hover:underline">Read More &rarr;</a>
+                </div>
+
+                <!-- Essay 4 -->
+                <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll">
+                    <h3 class="font-display text-xl tracking-tight mb-3">Unlocking Business Growth Through Simplicity: A Simplicity-First Approach for Stakeholders and Investors</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">For executives, investors, and decision-makers who fund and approve business solutions, simplicity is more than a design philosophy; it is a strategic advantage. Solutions that are easy to implement, manage, and scale not only reduce operational costs but also deliver faster ROI and higher stakeholder confidence.</p>
+                    <a href="#" class="text-sf-red text-sm font-semibold hover:underline">Read More &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 8. THE GREEN SOFTWARE CONNECTION                              -->
+    <!-- ============================================================ -->
+    <section id="green" class="relative py-24 lg:py-32 bg-sf-surface" aria-label="Simple Software Is Green Software">
+        <!-- Subtle green accent overlay -->
+        <div class="absolute inset-0 opacity-[0.02] pointer-events-none" style="background: linear-gradient(135deg, #2D6A4F 0%, transparent 50%);"></div>
+
+        <div class="max-w-content mx-auto px-6 relative">
+            <!-- Section Header -->
+            <div class="animate-on-scroll">
+                <div class="w-[60px] h-[3px] bg-sf-green mb-6"></div>
+                <h2 class="font-display text-5xl md:text-6xl tracking-tight">Simple Software Is Green Software</h2>
+            </div>
+
+            <!-- Stat Callout -->
+            <div class="mt-12 animate-on-scroll">
+                <div class="inline-flex items-center gap-4 bg-sf-black border border-sf-green/30 rounded-sm px-6 py-4">
+                    <svg class="w-8 h-8 text-sf-green flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M12 3c-1.2 2.4-3.6 4-6 4.8C5.4 10.8 4.8 14.4 7.2 18c1.2 1.8 3 3 4.8 3 1.8 0 3.6-1.2 4.8-3 2.4-3.6 1.8-7.2 1.2-10.2-2.4-.8-4.8-2.4-6-4.8z" />
+                    </svg>
+                    <span class="text-lg font-display tracking-tight"><span class="text-sf-green">2&ndash;3%</span> of global carbon emissions come from software operations</span>
+                </div>
+            </div>
+
+            <!-- Content Blocks -->
+            <div class="mt-12 space-y-8 max-w-3xl">
+                <p class="text-lg text-gray-300 leading-relaxed animate-on-scroll">
+                    Software has an environmental footprint. Software runs on hardware. Hardware consumes electricity. Electricity comes from power plants. Every CPU cycle, every memory allocation, every network packet translates into electrons flowing through circuits. Operational software contributes roughly two to three percent of global carbon emissions, putting the tech industry's footprint on par with aviation.
+                </p>
+                <p class="text-lg text-gray-300 leading-relaxed animate-on-scroll">
+                    The connection between simplicity and sustainability runs deeper than most teams realize. Every feature you do not build is energy you do not consume. Every dependency you do not add is code that does not run. Every abstraction layer you skip is indirection your CPU does not process.
+                </p>
+                <p class="text-lg text-gray-300 leading-relaxed animate-on-scroll">
+                    The Green Software Foundation's core principles align with Simplicity-First: Energy efficiency &mdash; use the least amount of energy possible. Carbon awareness &mdash; do more when the electricity is cleaner. Hardware efficiency &mdash; use the least amount of embodied carbon possible.
+                </p>
+                <p class="text-xl text-white font-semibold leading-relaxed animate-on-scroll">
+                    A pattern emerges: the principles we advocate for developer experience, for operability, for maintainability &mdash; these same principles reduce environmental impact. Simplicity-First is green by default.
+                </p>
+            </div>
+
+            <!-- Visual: Code → Server → Energy → Carbon -->
+            <div class="mt-16 flex flex-wrap items-center justify-center gap-4 text-sf-muted animate-on-scroll">
+                <div class="flex items-center gap-2">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg>
+                    <span class="font-mono text-sm">Code</span>
+                </div>
+                <svg class="w-5 h-5 text-sf-green" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="14 7 19 12 14 17" /></svg>
+                <div class="flex items-center gap-2">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /></svg>
+                    <span class="font-mono text-sm">Servers</span>
+                </div>
+                <svg class="w-5 h-5 text-sf-green" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="14 7 19 12 14 17" /></svg>
+                <div class="flex items-center gap-2">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg>
+                    <span class="font-mono text-sm">Energy</span>
+                </div>
+                <svg class="w-5 h-5 text-sf-green" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="14 7 19 12 14 17" /></svg>
+                <div class="flex items-center gap-2">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10" /><path d="M8 14s1.5 2 4 2 4-2 4-2" /><line x1="9" y1="9" x2="9.01" y2="9" /><line x1="15" y1="9" x2="15.01" y2="9" /></svg>
+                    <span class="font-mono text-sm">Carbon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 9. CLOSING MANIFESTO / CTA SECTION                           -->
+    <!-- ============================================================ -->
+    <section id="connect" class="relative py-24 lg:py-32" aria-label="Connect and Take Action">
+        <div class="max-w-content mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center animate-on-scroll">
+                <div class="accent-line mx-auto mb-6"></div>
+                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl tracking-tight max-w-4xl mx-auto">Keep It Simple. Keep It Clean. Don't Let the Bloat Win.</h2>
+            </div>
+
+            <!-- Manifesto Text -->
+            <div class="mt-12 text-center animate-on-scroll">
+                <p class="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
+                    The Complexity Trap is real, but it isn't inevitable. Teams escape it every day. They build systems that are simple, understandable, and a genuine pleasure to work on. They ship features quickly and confidently. They sleep through the night. You can join them.
+                </p>
+            </div>
+
+            <!-- Four Commitments -->
+            <div class="mt-16 space-y-6 max-w-3xl mx-auto">
+                <div class="flex items-start gap-4 animate-on-scroll stagger-1">
+                    <span class="diamond mt-2 flex-shrink-0"></span>
+                    <p class="text-lg md:text-xl text-white font-semibold leading-relaxed">We refuse architectures that require heroics.</p>
+                </div>
+                <div class="flex items-start gap-4 animate-on-scroll stagger-2">
+                    <span class="diamond mt-2 flex-shrink-0"></span>
+                    <p class="text-lg md:text-xl text-white font-semibold leading-relaxed">We don't ship features we cannot support in production.</p>
+                </div>
+                <div class="flex items-start gap-4 animate-on-scroll stagger-3">
+                    <span class="diamond mt-2 flex-shrink-0"></span>
+                    <p class="text-lg md:text-xl text-white font-semibold leading-relaxed">We consider debuggability and operability first-class requirements.</p>
+                </div>
+                <div class="flex items-start gap-4 animate-on-scroll stagger-4">
+                    <span class="diamond mt-2 flex-shrink-0"></span>
+                    <p class="text-lg md:text-xl text-white font-semibold leading-relaxed">We keep it simple, keep it clean, and don't let the bloat win.</p>
+                </div>
+            </div>
+
+            <!-- Connect Links -->
+            <div class="mt-20 animate-on-scroll">
+                <h3 class="font-display text-2xl tracking-tight text-center mb-8">Connect</h3>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="https://woodruff.dev" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 bg-sf-surface border border-sf-border hover:border-sf-red rounded-sm text-sm font-medium text-gray-300 hover:text-white transition-colors">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20h9" /><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" /></svg>
+                        Blog
+                    </a>
+                    <a href="https://bsky.app/profile/woodruff.dev" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 bg-sf-surface border border-sf-border hover:border-sf-red rounded-sm text-sm font-medium text-gray-300 hover:text-white transition-colors">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 7 3.5 10 3.5 13.5c0 4.5 3.5 6 5.5 4.5-.5 2-2 3.5-4 4h14c-2-.5-3.5-2-4-4 2 1.5 5.5 0 5.5-4.5C20.5 10 17.5 7 12 2z" /></svg>
+                        Bluesky
+                    </a>
+                    <a href="https://mastodon.social/@@cwoodruff" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 bg-sf-surface border border-sf-border hover:border-sf-red rounded-sm text-sm font-medium text-gray-300 hover:text-white transition-colors">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.3 12.5c-.3 1.6-2.7 3.3-5.5 3.7-1.5.2-2.9.3-4.4.3-2.5-.1-4.4-.6-4.4-.6v.7c.3 2.3 2.3 2.4 4.2 2.5 1.9 0 3.6-.5 3.6-.5l.1 1.7s-1.3.7-3.7.9c-1.3.1-2.9 0-4.8-.5C2.6 19.3 2 15.5 2 11.7v-.3c0-3.8 2.5-4.9 2.5-4.9C5.8 5.8 8.5 5.5 11.3 5.5h.1c2.8 0 5.5.3 6.8 1 0 0 2.5 1.1 2.5 4.9 0 0 0 2.8-.4 4.6zM18 9.8c0-1-.3-1.8-.8-2.4-.5-.6-1.2-.9-2.1-.9-1 0-1.8.4-2.3 1.2l-.5.8-.5-.8C11.3 6.9 10.4 6.5 9.4 6.5c-.9 0-1.6.3-2.1.9-.5.6-.8 1.4-.8 2.4v5.1h2V10c0-1 .4-1.6 1.3-1.6 1 0 1.4.6 1.4 1.8v2.7h2v-2.7c0-1.2.5-1.8 1.4-1.8.9 0 1.3.6 1.3 1.6v4.8h2V9.8z" /></svg>
+                        Mastodon
+                    </a>
+                    <a href="https://github.com/cwoodruff/simplicity-first-dev/issues" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 bg-sf-surface border border-sf-border hover:border-sf-red rounded-sm text-sm font-medium text-gray-300 hover:text-white transition-colors">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.02 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12z" /></svg>
+                        GitHub Issues
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ============================================================ -->
+<!-- 10. FOOTER                                                     -->
+<!-- ============================================================ -->
+<footer class="border-t border-sf-border py-12" aria-label="Site footer">
+    <div class="max-w-content mx-auto px-6">
+        <div class="md:flex md:items-start md:justify-between gap-12">
+            <!-- Brand -->
+            <div class="mb-8 md:mb-0">
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="/images/simplicityfirst.png" alt="Simplicity-First logo" width="32" height="32" class="w-8 h-8" />
+                    <span class="font-display text-xl tracking-wide">Simplicity-First</span>
+                </div>
+                <p class="text-sf-muted text-sm">&copy; Copyright 2025. All rights reserved Chris Woodruff.</p>
+                <p class="text-sf-muted-dark text-xs mt-2 font-mono">Powered by clarity, not complexity.</p>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="mb-8 md:mb-0" aria-label="Footer navigation">
+                <h4 class="text-sm font-semibold uppercase tracking-wider text-sf-muted mb-4">Navigation</h4>
+                <ul class="space-y-2">
+                    <li><a href="#hero" class="text-sm text-gray-400 hover:text-white transition-colors">Home</a></li>
+                    <li><a href="#philosophy" class="text-sm text-gray-400 hover:text-white transition-colors">Philosophy</a></li>
+                    <li><a href="#book" class="text-sm text-gray-400 hover:text-white transition-colors">The Book</a></li>
+                    <li><a href="#filters" class="text-sm text-gray-400 hover:text-white transition-colors">Three Filters</a></li>
+                    <li><a href="#essays" class="text-sm text-gray-400 hover:text-white transition-colors">Essays</a></li>
+                    <li><a href="#connect" class="text-sm text-gray-400 hover:text-white transition-colors">Connect</a></li>
+                </ul>
+            </nav>
+
+            <!-- Social -->
+            <div>
+                <h4 class="text-sm font-semibold uppercase tracking-wider text-sf-muted mb-4">Social</h4>
+                <ul class="space-y-2">
+                    <li><a href="https://woodruff.dev" target="_blank" rel="noopener noreferrer" class="text-sm text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                    <li><a href="https://bsky.app/profile/woodruff.dev" target="_blank" rel="noopener noreferrer" class="text-sm text-gray-400 hover:text-white transition-colors">Bluesky</a></li>
+                    <li><a href="https://mastodon.social/@@cwoodruff" target="_blank" rel="noopener noreferrer" class="text-sm text-gray-400 hover:text-white transition-colors">Mastodon</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

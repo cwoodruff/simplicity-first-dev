@@ -1,0 +1,198 @@
+/* ===== Simplicity-First Custom Styles ===== */
+
+/* --- Scroll Animation --- */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered delays for child elements */
+.stagger-1 { transition-delay: 0.1s; }
+.stagger-2 { transition-delay: 0.2s; }
+.stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
+
+/* --- Fade-in keyframes --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* --- Navbar --- */
+.nav-scrolled {
+    background-color: rgba(26, 26, 26, 0.95) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid #333333;
+}
+
+/* --- Diamond decorative element --- */
+.diamond {
+    width: 12px;
+    height: 12px;
+    background-color: #E31B23;
+    transform: rotate(45deg);
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.diamond-lg {
+    width: 20px;
+    height: 20px;
+}
+
+/* --- Geometric background pattern --- */
+.hero-pattern {
+    background-image:
+        linear-gradient(rgba(227, 27, 35, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(227, 27, 35, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+}
+
+/* --- Card hover effects --- */
+.card-hover {
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-4px);
+    border-color: #E31B23;
+    box-shadow: 0 8px 30px rgba(227, 27, 35, 0.1);
+}
+
+/* --- Accent line --- */
+.accent-line {
+    width: 60px;
+    height: 3px;
+    background-color: #E31B23;
+}
+
+/* --- Hamburger menu animation --- */
+.hamburger-line {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-open .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-open .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-open .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* --- Mobile menu overlay --- */
+.mobile-menu {
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0);
+}
+
+/* --- Accordion --- */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.accordion-content.is-open {
+    max-height: 2000px;
+}
+
+.accordion-trigger[aria-expanded="true"] .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-icon {
+    transition: transform 0.3s ease;
+}
+
+/* --- Custom scrollbar --- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #333333 #0a0a0a;
+}
+
+/* --- Focus styles --- */
+*:focus-visible {
+    outline: 2px solid #E31B23;
+    outline-offset: 2px;
+}
+
+/* --- Selection --- */
+::selection {
+    background-color: rgba(227, 27, 35, 0.3);
+    color: #ffffff;
+}
+
+/* --- Print styles --- */
+@media print {
+    nav, .mobile-menu, footer {
+        display: none !important;
+    }
+
+    body {
+        background: white !important;
+        color: black !important;
+    }
+
+    .hero-pattern {
+        background-image: none !important;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+}

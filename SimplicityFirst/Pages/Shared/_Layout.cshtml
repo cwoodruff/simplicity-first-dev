@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simplicity-First | Software Architecture Made Simple</title>
+    <meta name="description" content="Simplicity-First is a movement for developers, architects, and tech leaders who believe software should be clear, maintainable, and built for humans — not for résumés." />
+    <meta property="og:title" content="Simplicity-First | Software Architecture Made Simple" />
+    <meta property="og:description" content="Kill the Bloat. A movement for developers, architects, and tech leaders who believe software should be clear, maintainable, and built for humans." />
+    <meta property="og:image" content="/images/simplicityfirst.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://simplicity-first.dev/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="/images/simplicityfirst.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sf-black': '#0a0a0a',
+                        'sf-surface': '#1a1a1a',
+                        'sf-surface-light': '#222222',
+                        'sf-red': '#E31B23',
+                        'sf-red-dark': '#B8151B',
+                        'sf-muted': '#999999',
+                        'sf-muted-dark': '#888888',
+                        'sf-border': '#333333',
+                        'sf-green': '#2D6A4F',
+                    },
+                    fontFamily: {
+                        'display': ['"Bebas Neue"', 'sans-serif'],
+                        'body': ['"Barlow"', 'sans-serif'],
+                        'mono': ['"JetBrains Mono"', 'monospace'],
+                    },
+                    maxWidth: {
+                        'content': '1200px',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- htmx -->
+    <script src="https://unpkg.com/htmx.org@2.0.4" defer></script>
+
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body class="bg-sf-black text-white font-body antialiased">
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-sf-red focus:text-white focus:px-4 focus:py-2 focus:rounded focus:outline-none">
+        Skip to main content
+    </a>
+
+    @RenderBody()
+
+    <script src="/js/site.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
