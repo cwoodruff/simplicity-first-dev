@@ -136,18 +136,34 @@ Together, we are committed to delivering software that is user-friendly and easy
             <td></td>
         </tr>
         <tr>
-            <td rowspan=3>Part 6 – The Future of Simple</td>
+            <td rowspan=3>Part 6 – AI Through the Lens of Simplicity" /></td>
             <td>20</td>
-            <td>AI, Rust, and the Next Wave of Tools</td>
+            <td>AI as an Amplifier of Simplicity (or Complexity)/></td>
             <td></td>
         </tr>
         <tr>
             <td>21</td>
-            <td>Craftsmanship over Trends</td>
+            <td>Human-In-The-Loop Architecture/></td>
             <td></td>
         </tr>
         <tr>
             <td>22</td>
+            <td>AI-Driven Construction, the Simple Way/></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan=3>Part 7 – The Future of Simple</td>
+            <td>23</td>
+            <td>AI, Rust, and the Next Wave of Tools</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Craftsmanship over Trends</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>25</td>
             <td>The Simplicity-First Playbook</td>
             <td></td>
         </tr>
