@@ -1,0 +1,32 @@
+@page "/essays/{slug}"
+@model SimplicityFirst.Pages.EssayModel
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 bg-sf-black/90 border-b border-sf-border backdrop-blur-md" aria-label="Primary navigation">
+    <div class="max-w-content mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3 group">
+            <img src="/images/simplicityfirst.png" alt="Simplicity-First logo" width="40" height="40" class="w-10 h-10" />
+            <span class="font-display text-2xl tracking-wide text-white group-hover:text-sf-red transition-colors">Simplicity-First</span>
+        </a>
+        <a href="/#essays" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">&larr; Back to Essays</a>
+    </div>
+</nav>
+
+<main id="main-content" class="pt-32 pb-24">
+    <article class="max-w-3xl mx-auto px-6">
+        <div class="prose prose-invert prose-sf max-w-none">
+            @Html.Raw(Model.HtmlContent)
+        </div>
+    </article>
+</main>
+
+<style>
+    .prose-sf h1 { font-family: 'Bebas Neue', sans-serif; font-size: 3.75rem; line-height: 1; margin-bottom: 2rem; color: white; letter-spacing: -0.025em; }
+    .prose-sf h2 { font-family: 'Bebas Neue', sans-serif; font-size: 2.25rem; margin-top: 3rem; margin-bottom: 1.5rem; color: white; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+    .prose-sf p { font-size: 1.125rem; line-height: 1.75; margin-bottom: 1.5rem; color: #d1d5db; }
+    .prose-sf ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; color: #d1d5db; }
+    .prose-sf li { margin-bottom: 0.5rem; }
+    .prose-sf strong { color: white; font-weight: 600; }
+</style>

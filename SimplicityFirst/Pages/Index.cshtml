@@ -553,33 +553,31 @@
             <!-- Essay Cards Grid -->
             <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                <!-- Essay 1 -->
-                <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll">
-                    <h3 class="font-display text-xl tracking-tight mb-3">Kill the Bloat: The Controversial Clash Between SPAs, Server-Side Rendering, and the Power of Simplicity</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Ever feel like half your development time goes to chasing down strange bugs in a colossal JavaScript stack that only a wizard could appreciate? Enter the Simplicity-First philosophy, which reminds us that while fancy frameworks and cutting-edge libraries are appealing, they become useless if they overwhelm our code with excessive complexity.</p>
-                    <a href="#" class="text-sf-red text-sm font-semibold hover:underline">Read More &rarr;</a>
-                </div>
+                @foreach (var essay in Model.Essays)
+                {
+                    <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll">
+                        <h3 class="font-display text-xl tracking-tight mb-3">@essay.Title</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">@essay.Summary</p>
+                        <a asp-page="/Essay" asp-route-slug="@essay.Slug" class="text-sf-red text-sm font-semibold hover:underline">Read More &rarr;</a>
+                    </div>
+                }
 
-                <!-- Essay 2 -->
-                <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll">
-                    <h3 class="font-display text-xl tracking-tight mb-3">The Simplicity Code: Intelligent Software Architecture for Scalability and Resilience</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Intelligent Software Architecture involves designing software systems that are adaptable, efficient, and capable of responding intelligently to changing requirements. Unlike approaches that rely on overly complex systems to appear intelligent, true intelligence in architecture emphasizes simplicity, maintainability, and robustness.</p>
-                    <a href="#" class="text-sf-red text-sm font-semibold hover:underline">Read More &rarr;</a>
-                </div>
+                @if (!Model.Essays.Any())
+                {
+                    <!-- Essay 1 (Fallback if no MD files) -->
+                    <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll">
+                        <h3 class="font-display text-xl tracking-tight mb-3">Kill the Bloat: The Controversial Clash Between SPAs, Server-Side Rendering, and the Power of Simplicity</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">Ever feel like half your development time goes to chasing down strange bugs in a colossal JavaScript stack that only a wizard could appreciate? Enter the Simplicity-First philosophy, which reminds us that while fancy frameworks and cutting-edge libraries are appealing, they become useless if they overwhelm our code with excessive complexity.</p>
+                        <a href="#" class="text-sf-red text-sm font-semibold hover:underline">Read More &rarr;</a>
+                    </div>
 
-                <!-- Essay 3 -->
-                <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll">
-                    <h3 class="font-display text-xl tracking-tight mb-3">Seizing Opportunities Through Simplicity: A Simplicity-First Approach</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Simplicity is frequently misunderstood as a lack of depth; however, it genuinely serves as a powerful tool for clarity, agility, and efficiency. By embracing simplicity, we create opportunities to recognize and seize chances that might otherwise remain concealed beneath layers of unnecessary complexity.</p>
-                    <a href="#" class="text-sf-red text-sm font-semibold hover:underline">Read More &rarr;</a>
-                </div>
-
-                <!-- Essay 4 -->
-                <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll">
-                    <h3 class="font-display text-xl tracking-tight mb-3">Unlocking Business Growth Through Simplicity: A Simplicity-First Approach for Stakeholders and Investors</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4">For executives, investors, and decision-makers who fund and approve business solutions, simplicity is more than a design philosophy; it is a strategic advantage. Solutions that are easy to implement, manage, and scale not only reduce operational costs but also deliver faster ROI and higher stakeholder confidence.</p>
-                    <a href="#" class="text-sf-red text-sm font-semibold hover:underline">Read More &rarr;</a>
-                </div>
+                    <!-- Essay 2 -->
+                    <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll">
+                        <h3 class="font-display text-xl tracking-tight mb-3">The Simplicity Code: Intelligent Software Architecture for Scalability and Resilience</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">Intelligent Software Architecture involves designing software systems that are adaptable, efficient, and capable of responding intelligently to changing requirements. Unlike approaches that rely on overly complex systems to appear intelligent, true intelligence in architecture emphasizes simplicity, maintainability, and robustness.</p>
+                        <a href="#" class="text-sf-red text-sm font-semibold hover:underline">Read More &rarr;</a>
+                    </div>
+                }
             </div>
         </div>
     </section>

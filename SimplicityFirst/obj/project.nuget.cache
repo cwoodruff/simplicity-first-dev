@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8UPEXQOZ35w=",
+  "dgSpecHash": "P0S+EUmT22o=",
   "success": true,
   "projectFilePath": "/Volumes/extra/Git/simplicity-first-dev/SimplicityFirst/SimplicityFirst.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/cwoodruff/.nuget/packages/markdig/0.45.0/markdig.0.45.0.nupkg.sha512"
+  ],
   "logs": []
 }
