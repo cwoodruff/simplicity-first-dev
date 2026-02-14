@@ -10,7 +10,7 @@ public class EssayInfo
     public string Summary { get; set; } = string.Empty;
 }
 
-public class IndexModel(ILogger<IndexModel> logger, IWebHostEnvironment environment) : PageModel
+public class IndexModel(IWebHostEnvironment environment) : PageModel
 {
     public List<EssayInfo> Essays { get; private set; } = [];
 
