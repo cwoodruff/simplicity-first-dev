@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "P0S+EUmT22o=",
+  "dgSpecHash": "+01ewQ4hxns=",
   "success": true,
   "projectFilePath": "/Volumes/extra/Git/simplicity-first-dev/SimplicityFirst/SimplicityFirst.csproj",
   "expectedPackageFiles": [
-    "/Users/cwoodruff/.nuget/packages/markdig/0.45.0/markdig.0.45.0.nupkg.sha512"
+    "/Users/cwoodruff/.nuget/packages/markdig/0.45.0/markdig.0.45.0.nupkg.sha512",
+    "/Users/cwoodruff/.nuget/packages/microsoft.netcore.app.ref/10.0.2/microsoft.netcore.app.ref.10.0.2.nupkg.sha512",
+    "/Users/cwoodruff/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.2/microsoft.aspnetcore.app.ref.10.0.2.nupkg.sha512",
+    "/Users/cwoodruff/.nuget/packages/microsoft.netcore.app.host.osx-arm64/10.0.2/microsoft.netcore.app.host.osx-arm64.10.0.2.nupkg.sha512"
   ],
   "logs": []
 }
