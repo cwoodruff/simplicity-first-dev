@@ -1,0 +1,22 @@
+@model SimplicityFirst.Pages.SubscribeResultModel
+
+@if (Model.Success)
+{
+    <div data-show-modal="true" class="flex items-center gap-3 text-sf-green">
+        <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+        <span class="text-sm">@Model.Message</span>
+    </div>
+}
+else
+{
+    <div class="flex items-center gap-3 text-sf-red">
+        <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="15" y1="9" x2="9" y2="15" />
+            <line x1="9" y1="9" x2="15" y2="15" />
+        </svg>
+        <span class="text-sm">@Model.Message</span>
+    </div>
+}

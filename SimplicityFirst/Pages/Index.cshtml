@@ -448,11 +448,38 @@
                 </div>
             </div>
 
-            <!-- Book CTA -->
+            <!-- Book CTA — Email Subscription -->
             <div class="mt-16 text-center animate-on-scroll">
-                <a href="#connect" class="inline-flex items-center justify-center px-8 py-4 bg-sf-red hover:bg-sf-red-dark text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
-                    Get Notified When the Book Launches
-                </a>
+                <h3 class="font-display text-3xl md:text-4xl tracking-tight mb-3">Get Notified When the Book Launches</h3>
+                <p class="text-sf-muted text-sm mb-6">Join the list. No spam, just a single email when it ships.</p>
+
+                <form id="subscribe-form"
+                      hx-post="/?handler=Subscribe"
+                      hx-target="#subscribe-response"
+                      hx-indicator="#subscribe-spinner"
+                      hx-on::after-request="onSubscribeComplete(event)"
+                      class="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-lg mx-auto">
+                    @Html.AntiForgeryToken()
+                    <input type="email"
+                           id="subscriber-email"
+                           name="SubscriberEmail"
+                           placeholder="you@example.com"
+                           required
+                           maxlength="254"
+                           autocomplete="email"
+                           class="w-full sm:flex-1 px-4 py-3 bg-sf-surface border border-sf-border rounded-sm text-white placeholder-sf-muted text-sm focus:outline-none focus:border-sf-red transition-colors" />
+                    <button type="submit"
+                            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 bg-sf-red hover:bg-sf-red-dark text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                        <!-- Spinner (hidden by default, shown during request) -->
+                        <svg id="subscribe-spinner" class="htmx-indicator w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+                        </svg>
+                        Notify Me
+                    </button>
+                </form>
+
+                <div id="subscribe-response" class="mt-4"></div>
             </div>
         </div>
     </section>
@@ -771,6 +798,28 @@
             </div>
         </div>
     </section>
+
+    <!-- ============================================================ -->
+    <!-- THANK-YOU MODAL                                               -->
+    <!-- ============================================================ -->
+    <div id="thank-you-modal" class="thank-you-modal fixed inset-0 z-50 flex items-center justify-center" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+        <!-- Backdrop -->
+        <div class="modal-backdrop absolute inset-0 bg-sf-black/90"></div>
+        <!-- Panel -->
+        <div class="modal-panel relative bg-sf-surface border border-sf-border rounded-sm p-10 max-w-md w-full mx-6 text-center">
+            <!-- Green Checkmark -->
+            <div class="mx-auto w-16 h-16 mb-6 rounded-full bg-sf-green/20 flex items-center justify-center">
+                <svg class="w-8 h-8 text-sf-green" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+            </div>
+            <h2 id="modal-title" class="font-display text-4xl tracking-tight mb-3">You're In!</h2>
+            <p class="text-gray-300 text-sm leading-relaxed mb-8">We'll send you one email when <strong class="text-white">Software Architecture Made Simple</strong> is ready. No spam, no fluff.</p>
+            <button id="modal-close-btn" class="inline-flex items-center justify-center px-8 py-3 bg-sf-red hover:bg-sf-red-dark text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                Got It
+            </button>
+        </div>
+    </div>
 
 </main>
 

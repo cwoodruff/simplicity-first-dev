@@ -76,4 +76,54 @@
             }
         });
     });
+
+    // --- Thank-you modal ---
+    const modal = document.getElementById('thank-you-modal');
+    const modalCloseBtn = document.getElementById('modal-close-btn');
+
+    function openModal() {
+        if (!modal) return;
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        if (modalCloseBtn) modalCloseBtn.focus();
+    }
+
+    function closeModal() {
+        if (!modal) return;
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    if (modalCloseBtn) {
+        modalCloseBtn.addEventListener('click', closeModal);
+    }
+
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal || e.target.classList.contains('modal-backdrop')) {
+                closeModal();
+            }
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal && modal.classList.contains('is-open')) {
+            closeModal();
+        }
+    });
+
+    // --- HTMX subscribe callback ---
+    window.onSubscribeComplete = function (event) {
+        const response = document.getElementById('subscribe-response');
+        if (!response) return;
+
+        const showModal = response.querySelector('[data-show-modal="true"]');
+        if (showModal) {
+            const form = document.getElementById('subscribe-form');
+            if (form) form.style.display = 'none';
+            openModal();
+        }
+    };
 })();

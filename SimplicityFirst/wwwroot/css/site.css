@@ -177,6 +177,45 @@
     color: #ffffff;
 }
 
+/* --- HTMX indicator --- */
+.htmx-indicator {
+    display: none;
+}
+
+.htmx-request .htmx-indicator {
+    display: inline-block;
+}
+
+.htmx-request.htmx-indicator {
+    display: inline-block;
+}
+
+/* --- Thank-you modal --- */
+.thank-you-modal {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.thank-you-modal.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.thank-you-modal .modal-panel {
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.thank-you-modal.is-open .modal-panel {
+    transform: scale(1);
+}
+
+/* --- Subscribe input focus glow --- */
+#subscriber-email:focus {
+    box-shadow: 0 0 0 3px rgba(227, 27, 35, 0.25);
+}
+
 /* --- Print styles --- */
 @media print {
     nav, .mobile-menu, footer {
