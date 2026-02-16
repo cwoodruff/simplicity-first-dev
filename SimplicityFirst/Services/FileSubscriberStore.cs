@@ -37,6 +37,34 @@ public class FileSubscriberStore : ISubscriberStore
         }
     }
 
+    public async Task<List<SubscriberEntry>> GetAllSubscribersAsync()
+    {
+        await _lock.WaitAsync();
+        try
+        {
+            if (!File.Exists(_filePath))
+                return [];
+
+            var lines = await File.ReadAllLinesAsync(_filePath);
+            return lines.Skip(1)
+                .Where(l => !string.IsNullOrWhiteSpace(l))
+                .Select(l =>
+                {
+                    var parts = l.Split(',', 2);
+                    var email = parts[0];
+                    var date = parts.Length > 1 && DateTime.TryParse(parts[1], out var d)
+                        ? d : DateTime.MinValue;
+                    return new SubscriberEntry(email, date);
+                })
+                .OrderByDescending(s => s.SubscribedAtUtc)
+                .ToList();
+        }
+        finally
+        {
+            _lock.Release();
+        }
+    }
+
     public async Task AddSubscriberAsync(string email)
     {
         await _lock.WaitAsync();
