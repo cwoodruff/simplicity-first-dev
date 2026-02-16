@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <Content Include="Essays\**\*.md" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="*.md" CopyToPublishDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>
