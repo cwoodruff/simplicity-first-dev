@@ -440,6 +440,5 @@ chinook-razor-htmx/CLAUDE.md
 images/.DS_Store
 .DS_Store
 /.claude
-/SimplicityFirst/obj
-/SimplicityFirst/bin
-/SimplicityFirst/obj
+/bin/*
+/obj/*
