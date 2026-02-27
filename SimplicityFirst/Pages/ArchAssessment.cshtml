@@ -1,0 +1,352 @@
+@page
+@model SimplicityFirst.Pages.ArchAssessment
+
+@{
+    ViewData["Title"] = "Architecture Health Assessment | Simplicity-First Consulting";
+}
+
+<!-- ============================================================ -->
+<!-- NAVIGATION                                                    -->
+<!-- ============================================================ -->
+<nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" aria-label="Primary navigation">
+    <div class="max-w-content mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3 group">
+            <img src="/images/simplicityfirst.png" alt="Simplicity-First logo" width="40" height="40" class="w-10 h-10" />
+            <span class="font-display text-2xl tracking-wide text-white group-hover:text-sf-red transition-colors">Simplicity-First</span>
+        </a>
+        <a href="#book-call" class="inline-flex items-center justify-center px-6 py-3 bg-sf-red hover:bg-sf-red-dark text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+            Book a Call
+        </a>
+        <a href="/" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">&larr; Back to Home</a>
+    </div>
+</nav>
+
+<main id="main-content">
+
+    <!-- ============================================================ -->
+    <!-- HERO                                                          -->
+    <!-- ============================================================ -->
+    <section id="hero" class="hero-pattern relative min-h-screen flex items-center pt-20 overflow-hidden" aria-label="Architecture Health Assessment">
+        <div class="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none" style="background: linear-gradient(135deg, transparent 40%, #E31B23 40%, #E31B23 41%, transparent 41%);"></div>
+        <div class="absolute bottom-20 left-10 opacity-10 pointer-events-none">
+            <div class="diamond" style="width:80px;height:80px;"></div>
+        </div>
+
+        <div class="max-w-content mx-auto px-6 py-20 lg:py-32">
+            <p class="text-xs font-semibold uppercase tracking-[4px] text-sf-red mb-6 animate-on-scroll">Architecture Health Assessment</p>
+
+            <h1 class="font-display text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight leading-none animate-on-scroll stagger-1">
+                Your Architecture Is Costing You More <span class="text-sf-red">Than You Think.</span>
+            </h1>
+
+            <p class="mt-8 text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl animate-on-scroll stagger-2">
+                A clear, honest diagnosis of your codebase, your infrastructure, and your technical debt. In 2 to 3 weeks. For a fixed price.
+            </p>
+
+            <div class="mt-12 flex flex-wrap gap-12 animate-on-scroll stagger-3">
+                <div class="flex flex-col gap-1">
+                    <span class="font-display text-4xl text-white tracking-wide">2-3</span>
+                    <span class="text-xs font-semibold uppercase tracking-[3px] text-sf-muted-dark">Weeks</span>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <span class="font-display text-4xl text-white tracking-wide">$8-15K</span>
+                    <span class="text-xs font-semibold uppercase tracking-[3px] text-sf-muted-dark">Fixed Price</span>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <span class="font-display text-4xl text-white tracking-wide">30-60-90</span>
+                    <span class="text-xs font-semibold uppercase tracking-[3px] text-sf-muted-dark">Day Action Plan</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 01 — THE PROBLEM                                              -->
+    <!-- ============================================================ -->
+    <section class="relative py-24 lg:py-32 bg-sf-surface" aria-label="The Problem">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="animate-on-scroll">
+                <p class="font-display text-sm tracking-[4px] text-sf-red mb-3">01</p>
+                <h2 class="font-display text-5xl md:text-6xl tracking-tight">You Already Know <span class="text-sf-muted">Something Is Wrong</span></h2>
+            </div>
+
+            <p class="mt-10 text-lg text-gray-300 leading-relaxed animate-on-scroll">
+                Features that shipped in two weeks now take six. Your best engineer just left, and nobody fully understands the system she built. Deployments feel like holding your breath. The board is asking how you plan to scale with the new funding, and you don't have a confident answer.
+            </p>
+
+            <div class="mt-8 flex flex-col gap-4 animate-on-scroll">
+                <div class="flex items-start gap-4 p-4 bg-sf-surface-light border border-sf-border">
+                    <span class="font-display text-xl text-sf-red leading-none mt-0.5 flex-shrink-0">&times;</span>
+                    <p class="text-base text-gray-300"><strong class="text-white">Hired more engineers</strong> which added coordination overhead without adding speed</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 bg-sf-surface-light border border-sf-border">
+                    <span class="font-display text-xl text-sf-red leading-none mt-0.5 flex-shrink-0">&times;</span>
+                    <p class="text-base text-gray-300"><strong class="text-white">Adopted a new platform or pushed toward microservices</strong> which layered new complexity onto old problems</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 bg-sf-surface-light border border-sf-border">
+                    <span class="font-display text-xl text-sf-red leading-none mt-0.5 flex-shrink-0">&times;</span>
+                    <p class="text-base text-gray-300"><strong class="text-white">Ran an internal hackathon</strong> to tackle tech debt. The team produced a list. Nobody prioritized it. Nothing changed.</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 bg-sf-surface-light border border-sf-border">
+                    <span class="font-display text-xl text-sf-red leading-none mt-0.5 flex-shrink-0">&times;</span>
+                    <p class="text-base text-gray-300"><strong class="text-white">Brought in a large consultancy.</strong> Six weeks and $100K later: a 200-page deck, abstract recommendations, no clear first step.</p>
+                </div>
+            </div>
+
+            <div class="mt-10 border-l-2 border-sf-red pl-6 py-4 bg-sf-red/[0.04] animate-on-scroll">
+                <p class="text-lg italic text-white leading-relaxed">
+                    Am I crazy, or is this actually as bad as I think it is? And if it is, how do I fix it without blowing everything up?
+                </p>
+            </div>
+
+            <p class="mt-12 text-xl text-white font-semibold animate-on-scroll">
+                You're not crazy. And you don't need to blow everything up.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 02 — THE SOLUTION                                             -->
+    <!-- ============================================================ -->
+    <section class="relative py-24 lg:py-32" aria-label="The Solution">
+        <div class="max-w-content mx-auto px-6">
+            <div class="animate-on-scroll">
+                <p class="font-display text-sm tracking-[4px] text-sf-red mb-3">02</p>
+                <h2 class="font-display text-5xl md:text-6xl tracking-tight">An Honest Diagnosis. <span class="text-sf-muted">Not a Sales Pitch.</span></h2>
+            </div>
+
+            <div class="max-w-3xl mt-10">
+                <p class="text-lg text-gray-300 leading-relaxed animate-on-scroll">
+                    I personally review your codebase, interview your technical and product leaders, and deliver a clear picture of where your architecture stands today, what it's costing you, and exactly what to do about it.
+                </p>
+                <p class="mt-5 text-lg text-gray-300 leading-relaxed animate-on-scroll">
+                    The assessment applies a simplicity-first philosophy: I look for the fewest changes that solve the most pain. Sometimes your architecture is closer to healthy than your team thinks. Sometimes it means naming a hard truth everyone feels but nobody has said out loud. Either way, you get clarity.
+                </p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-px bg-sf-border animate-on-scroll">
+                <div class="bg-sf-surface p-8 flex flex-col gap-3">
+                    <span class="font-display text-4xl text-sf-red leading-none">01</span>
+                    <h3 class="font-display text-2xl tracking-wide">You. Not a Team of Juniors.</h3>
+                    <p class="text-sm text-sf-muted leading-relaxed">I do the analysis myself. No rotating associates. No delegation. One senior engineer with direct access to your system and your people.</p>
+                </div>
+                <div class="bg-sf-surface p-8 flex flex-col gap-3">
+                    <span class="font-display text-4xl text-sf-red leading-none">02</span>
+                    <h3 class="font-display text-2xl tracking-wide">A Plan, Not a Deck.</h3>
+                    <p class="text-sm text-sf-muted leading-relaxed">You get a 30-60-90 day action plan with estimated effort and expected results. Not 200 pages of abstract recommendations.</p>
+                </div>
+                <div class="bg-sf-surface p-8 flex flex-col gap-3">
+                    <span class="font-display text-4xl text-sf-red leading-none">03</span>
+                    <h3 class="font-display text-2xl tracking-wide">The Economics Lens.</h3>
+                    <p class="text-sm text-sf-muted leading-relaxed">Every finding connects to a dollar figure. Your CFO can read the report. Your board can act on it.</p>
+                </div>
+                <div class="bg-sf-surface p-8 flex flex-col gap-3">
+                    <span class="font-display text-4xl text-sf-red leading-none">04</span>
+                    <h3 class="font-display text-2xl tracking-wide">Self-Sufficiency.</h3>
+                    <p class="text-sm text-sf-muted leading-relaxed">The goal is to hand you the map and let your team run. Not to create a dependency that justifies the next engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 03 — WHAT'S INCLUDED                                          -->
+    <!-- ============================================================ -->
+    <section class="relative py-24 lg:py-32 bg-sf-surface" aria-label="What's Included">
+        <div class="max-w-content mx-auto px-6">
+            <div class="animate-on-scroll">
+                <p class="font-display text-sm tracking-[4px] text-sf-red mb-3">03</p>
+                <h2 class="font-display text-5xl md:text-6xl tracking-tight">What the <span class="text-sf-muted">Assessment Includes</span></h2>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="flex gap-4 p-6 border border-sf-border bg-sf-black card-hover animate-on-scroll">
+                    <span class="font-display text-3xl text-sf-red leading-none flex-shrink-0">01</span>
+                    <div>
+                        <h4 class="text-base font-semibold text-white mb-1">Codebase &amp; Infrastructure Analysis</h4>
+                        <p class="text-sm text-sf-muted leading-relaxed">8 to 12 hours of hands-on review, done by me, not delegated.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 p-6 border border-sf-border bg-sf-black card-hover animate-on-scroll stagger-1">
+                    <span class="font-display text-3xl text-sf-red leading-none flex-shrink-0">02</span>
+                    <div>
+                        <h4 class="text-base font-semibold text-white mb-1">Leadership Interviews</h4>
+                        <p class="text-sm text-sf-muted leading-relaxed">Conversations with your CTO, lead engineers, and product leadership to understand the full picture.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 p-6 border border-sf-border bg-sf-black card-hover animate-on-scroll stagger-2">
+                    <span class="font-display text-3xl text-sf-red leading-none flex-shrink-0">03</span>
+                    <div>
+                        <h4 class="text-base font-semibold text-white mb-1">Technical Debt Inventory</h4>
+                        <p class="text-sm text-sf-muted leading-relaxed">Every item ranked by effort, impact, and urgency. No vague categories. Specific, prioritized findings.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 p-6 border border-sf-border bg-sf-black card-hover animate-on-scroll stagger-3">
+                    <span class="font-display text-3xl text-sf-red leading-none flex-shrink-0">04</span>
+                    <div>
+                        <h4 class="text-base font-semibold text-white mb-1">Architecture Scoring</h4>
+                        <p class="text-sm text-sf-muted leading-relaxed">Scored across four dimensions: ability to grow, maintainability, security, and performance.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 p-6 border border-sf-border bg-sf-black card-hover animate-on-scroll stagger-4">
+                    <span class="font-display text-3xl text-sf-red leading-none flex-shrink-0">05</span>
+                    <div>
+                        <h4 class="text-base font-semibold text-white mb-1">Executive Presentation &amp; Report</h4>
+                        <p class="text-sm text-sf-muted leading-relaxed">A 1-hour executive summary plus a full written report your board can read and your team can reference.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 p-6 border border-sf-border bg-sf-black card-hover animate-on-scroll stagger-4">
+                    <span class="font-display text-3xl text-sf-red leading-none flex-shrink-0">06</span>
+                    <div>
+                        <h4 class="text-base font-semibold text-white mb-1">30-60-90 Day Action Plan</h4>
+                        <p class="text-sm text-sf-muted leading-relaxed">Estimated effort and expected results for each recommendation. Start executing on Monday morning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 04 — RESULTS                                                  -->
+    <!-- ============================================================ -->
+    <section class="relative py-24 lg:py-32" aria-label="Results">
+        <div class="max-w-content mx-auto px-6">
+            <div class="animate-on-scroll">
+                <p class="font-display text-sm tracking-[4px] text-sf-red mb-3">04</p>
+                <h2 class="font-display text-5xl md:text-6xl tracking-tight">What Changes <span class="text-sf-muted">After the Assessment</span></h2>
+            </div>
+
+            <div class="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-px bg-sf-border animate-on-scroll">
+                <div class="bg-sf-surface p-8 text-center">
+                    <div class="font-display text-5xl text-sf-red leading-none mb-2">60%</div>
+                    <div class="text-sm text-sf-muted leading-snug">Reduction in deployment failures</div>
+                </div>
+                <div class="bg-sf-surface p-8 text-center">
+                    <div class="font-display text-5xl text-sf-red leading-none mb-2">90</div>
+                    <div class="text-sm text-sf-muted leading-snug">Days from monthly to weekly releases</div>
+                </div>
+                <div class="bg-sf-surface p-8 text-center">
+                    <div class="font-display text-5xl text-sf-red leading-none mb-2">$40K</div>
+                    <div class="text-sm text-sf-muted leading-snug">Monthly cloud waste identified and eliminated</div>
+                </div>
+                <div class="bg-sf-surface p-8 text-center">
+                    <div class="font-display text-5xl text-sf-red leading-none mb-2">6 FIG</div>
+                    <div class="text-sm text-sf-muted leading-snug">Technical investment secured from the board</div>
+                </div>
+            </div>
+
+            <p class="mt-10 text-lg text-gray-300 text-center max-w-2xl mx-auto animate-on-scroll">
+                You stop guessing and start deciding. The tangled problems become a ranked list. Your CTO walks into the next board meeting with a plan the engineering team can execute.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 05 — AUDIENCE                                                 -->
+    <!-- ============================================================ -->
+    <section class="relative py-24 lg:py-32 bg-sf-surface" aria-label="Who This Is For">
+        <div class="max-w-content mx-auto px-6">
+            <div class="animate-on-scroll">
+                <p class="font-display text-sm tracking-[4px] text-sf-red mb-3">05</p>
+                <h2 class="font-display text-5xl md:text-6xl tracking-tight">Built for Teams <span class="text-sf-muted">at an Inflection Point</span></h2>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-8 border border-sf-border bg-sf-surface-light card-hover animate-on-scroll">
+                    <h3 class="font-display text-2xl tracking-wide mb-3">Post-Funding Startups</h3>
+                    <p class="text-sm text-sf-muted leading-relaxed">Series A or B. The board is asking how you'll scale with the new capital. You need a confident answer.</p>
+                </div>
+                <div class="p-8 border border-sf-border bg-sf-surface-light card-hover animate-on-scroll stagger-1">
+                    <h3 class="font-display text-2xl tracking-wide mb-3">Scaling Companies</h3>
+                    <p class="text-sm text-sf-muted leading-relaxed">Velocity has dropped. The team spends more time fighting the system than building features. Something has to give.</p>
+                </div>
+                <div class="p-8 border border-sf-border bg-sf-surface-light card-hover animate-on-scroll stagger-2">
+                    <h3 class="font-display text-2xl tracking-wide mb-3">New Technical Leaders</h3>
+                    <p class="text-sm text-sf-muted leading-relaxed">You inherited this codebase. You need an honest picture before you commit to a direction or make promises to the board.</p>
+                </div>
+                <div class="p-8 border border-sf-border bg-sf-surface-light card-hover animate-on-scroll stagger-3">
+                    <h3 class="font-display text-2xl tracking-wide mb-3">Non-Technical Founders</h3>
+                    <p class="text-sm text-sf-muted leading-relaxed">You sense something is wrong but need a translator between engineering reality and business decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 06 — PRICING                                                  -->
+    <!-- ============================================================ -->
+    <section class="relative py-24 lg:py-32" aria-label="Pricing">
+        <div class="max-w-content mx-auto px-6">
+            <div class="animate-on-scroll">
+                <p class="font-display text-sm tracking-[4px] text-sf-red mb-3">06</p>
+                <h2 class="font-display text-5xl md:text-6xl tracking-tight">Transparent Pricing. <span class="text-sf-muted">Fixed Scope.</span></h2>
+            </div>
+
+            <p class="mt-10 text-lg text-gray-300 leading-relaxed max-w-3xl animate-on-scroll">
+                No discovery calls just to learn the price. Here's what the assessment costs:
+            </p>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-px bg-sf-border animate-on-scroll">
+                <div class="bg-sf-surface p-10 flex flex-col items-start">
+                    <div class="font-display text-3xl tracking-wide mb-2">Focused</div>
+                    <div class="font-display text-5xl text-sf-red leading-none mb-5">$8,000</div>
+                    <p class="text-sm text-sf-muted leading-relaxed">Single product, under 10 engineers, straightforward stack.</p>
+                </div>
+                <div class="bg-sf-black p-10 flex flex-col items-start border-t-[3px] border-t-sf-red">
+                    <span class="text-xs font-semibold uppercase tracking-[2px] text-sf-red mb-4">Most Common</span>
+                    <div class="font-display text-3xl tracking-wide mb-2">Standard</div>
+                    <div class="font-display text-5xl text-sf-red leading-none mb-5">$12,000</div>
+                    <p class="text-sm text-sf-muted leading-relaxed">Multiple products or complex integrations. 10 to 30 engineers.</p>
+                </div>
+                <div class="bg-sf-surface p-10 flex flex-col items-start">
+                    <div class="font-display text-3xl tracking-wide mb-2">Enterprise</div>
+                    <div class="font-display text-5xl text-sf-red leading-none mb-5">$15,000</div>
+                    <p class="text-sm text-sf-muted leading-relaxed">Multiple teams, legacy systems, or M&amp;A integration.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 max-w-2xl mx-auto border-2 border-sf-red bg-sf-red/[0.03] p-10 text-center animate-on-scroll">
+                <h3 class="font-display text-3xl tracking-wide mb-4">The Findings Guarantee</h3>
+                <p class="text-base text-gray-300 leading-relaxed">
+                    If the assessment doesn't surface at least five findings you weren't already aware of, you pay nothing. That's not marketing language. That's the deal.
+                </p>
+                <p class="mt-4 text-base text-gray-300 leading-relaxed">
+                    Every assessment I've delivered has uncovered problems the team didn't know existed, connections between issues they thought were isolated, and costs they hadn't measured. The guarantee exists because I've never had to honor it.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 07 — CTA                                                      -->
+    <!-- ============================================================ -->
+    <section id="book-call" class="relative py-24 lg:py-32 bg-sf-surface text-center" aria-label="Book a Call">
+        <div class="max-w-content mx-auto px-6">
+            <div class="animate-on-scroll">
+                <p class="font-display text-sm tracking-[4px] text-sf-red mb-3">07</p>
+                <h2 class="font-display text-5xl md:text-6xl tracking-tight mb-5">Ready to See <span class="text-sf-muted">the Full Picture?</span></h2>
+            </div>
+            <p class="text-lg text-gray-300 max-w-xl mx-auto mb-12 animate-on-scroll">
+                Schedule a free 30-minute discovery call. No pitch, no pressure. We'll talk through your situation, and I'll tell you honestly whether the assessment is the right move for your team.
+            </p>
+            <a href="#" class="inline-flex items-center justify-center px-12 py-5 bg-sf-red hover:bg-sf-red-dark text-white font-display text-2xl tracking-[3px] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(227,27,35,0.25)] rounded-sm animate-on-scroll">
+                Schedule Your Call
+            </a>
+            <p class="mt-6 text-sm text-sf-muted animate-on-scroll">
+                Or email directly: <a href="mailto:cwoodruff@live.com" class="text-gray-300 underline underline-offset-4 hover:text-white transition-colors">cwoodruff@live.com</a>
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<!-- ============================================================ -->
+<!-- FOOTER                                                        -->
+<!-- ============================================================ -->
+<footer class="border-t border-sf-border py-10 text-center" aria-label="Site footer">
+    <div class="max-w-content mx-auto px-6">
+        <p class="text-sm text-sf-muted tracking-wide">
+            &copy; 2026 <a href="/" class="text-gray-300 hover:text-white transition-colors">Woody Technology Studio LLC</a> &nbsp;&middot;&nbsp; <a href="/" class="text-gray-300 hover:text-white transition-colors">simplicity-first.dev</a>
+        </p>
+    </div>
+</footer>
