@@ -22,7 +22,8 @@ public class SubscribeResultModel
 public class IndexModel(
     IWebHostEnvironment environment,
     ISubscriberStore subscriberStore,
-    IEmailSender emailSender,
+    // TODO: re-enable when confirmation emails are ready
+    // IEmailSender emailSender,
     ILogger<IndexModel> logger) : PageModel
 {
     public List<EssayInfo> Essays { get; private set; } = [];
