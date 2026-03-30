@@ -289,18 +289,18 @@
             <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-px bg-sf-border animate-on-scroll">
                 <div class="bg-sf-surface p-10 flex flex-col items-start">
                     <div class="font-display text-3xl tracking-wide mb-2">Focused</div>
-                    <div class="font-display text-5xl text-sf-red leading-none mb-5">$8,000</div>
+                    <div class="font-display text-5xl text-sf-red leading-none mb-5"$12,000></div>
                     <p class="text-sm text-sf-muted leading-relaxed">Single product, under 10 engineers, straightforward stack.</p>
                 </div>
                 <div class="bg-sf-black p-10 flex flex-col items-start border-t-[3px] border-t-sf-red">
                     <span class="text-xs font-semibold uppercase tracking-[2px] text-sf-red mb-4">Most Common</span>
                     <div class="font-display text-3xl tracking-wide mb-2">Standard</div>
-                    <div class="font-display text-5xl text-sf-red leading-none mb-5">$12,000</div>
+                    <div class="font-display text-5xl text-sf-red leading-none mb-5">$16,000</div>
                     <p class="text-sm text-sf-muted leading-relaxed">Multiple products or complex integrations. 10 to 30 engineers.</p>
                 </div>
                 <div class="bg-sf-surface p-10 flex flex-col items-start">
                     <div class="font-display text-3xl tracking-wide mb-2">Enterprise</div>
-                    <div class="font-display text-5xl text-sf-red leading-none mb-5">$15,000</div>
+                    <div class="font-display text-5xl text-sf-red leading-none mb-5">$20,000</div>
                     <p class="text-sm text-sf-muted leading-relaxed">Multiple teams, legacy systems, or M&amp;A integration.</p>
                 </div>
             </div>
@@ -318,23 +318,128 @@
     </section>
 
     <!-- ============================================================ -->
-    <!-- 07 — CTA                                                      -->
+    <!-- 07 — EXERCISE + CTA                                           -->
     <!-- ============================================================ -->
-    <section id="book-call" class="relative py-24 lg:py-32 bg-sf-surface text-center" aria-label="Book a Call">
+    <section id="book-call" class="relative py-24 lg:py-32 bg-sf-surface" aria-label="Exercise and Book a Call">
         <div class="max-w-content mx-auto px-6">
             <div class="animate-on-scroll">
                 <p class="font-display text-sm tracking-[4px] text-sf-red mb-3">07</p>
                 <h2 class="font-display text-5xl md:text-6xl tracking-tight mb-5">Ready to See <span class="text-sf-muted">the Full Picture?</span></h2>
             </div>
-            <p class="text-lg text-gray-300 max-w-xl mx-auto mb-12 animate-on-scroll">
-                Schedule a free 30-minute discovery call. No pitch, no pressure. We'll talk through your situation, and I'll tell you honestly whether the assessment is the right move for your team.
-            </p>
-            <a href="https://calendly.com/cwoodruff70/30-minutes" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-12 py-5 bg-sf-red hover:bg-sf-red-dark text-white font-display text-2xl tracking-[3px] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(227,27,35,0.25)] rounded-sm animate-on-scroll">
-                Schedule Your Call
-            </a>
-            <p class="mt-6 text-sm text-sf-muted animate-on-scroll">
-                Or email directly: <a href="mailto:cwoodruff@live.com" class="text-gray-300 underline underline-offset-4 hover:text-white transition-colors">cwoodruff@live.com</a>
-            </p>
+
+            <div class="max-w-3xl mx-auto">
+                <p class="text-lg text-gray-300 leading-relaxed animate-on-scroll">
+                    Before we talk, I want you to have clarity on your own terms. Download the Architecture Business Case Template below, work through it with your leadership team, and bring it to our discovery call. The act of filling it out will surface questions you didn't know you had.
+                </p>
+
+                <!-- Template overview -->
+                <div class="mt-12 border border-sf-border bg-sf-black p-8 md:p-10 animate-on-scroll">
+                    <h3 class="font-display text-3xl tracking-wide mb-2">Architecture Business Case Template</h3>
+                    <p class="text-sm text-sf-muted mb-8">A one-page decision tool for architectural choices above the complexity threshold.</p>
+
+                    <!-- Section 1 -->
+                    <div class="mb-8">
+                        <div class="flex items-baseline gap-3 mb-3">
+                            <span class="font-display text-xl text-sf-red leading-none">01</span>
+                            <h4 class="text-base font-semibold text-white">Decision Overview</h4>
+                        </div>
+                        <p class="text-sm text-sf-muted leading-relaxed pl-9">
+                            Define the proposed architecture, the simplest viable alternative, the business outcome being delivered, and the decision owner. If you can't articulate the simpler version, you haven't understood the problem yet.
+                        </p>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div class="mb-8">
+                        <div class="flex items-baseline gap-3 mb-3">
+                            <span class="font-display text-xl text-sf-red leading-none">02</span>
+                            <h4 class="text-base font-semibold text-white">Total Cost of Architecture (TCA)</h4>
+                        </div>
+                        <p class="text-sm text-sf-muted leading-relaxed pl-9 mb-4">
+                            Estimate annual costs for both architectures across five categories. The delta between them is your Architecture Tax — what you pay every year for as long as the architecture exists.
+                        </p>
+                        <div class="pl-9 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div class="flex items-start gap-2">
+                                <span class="text-sf-red text-xs mt-1 flex-shrink-0">&#9670;</span>
+                                <span class="text-sm text-gray-300">Infrastructure</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-sf-red text-xs mt-1 flex-shrink-0">&#9670;</span>
+                                <span class="text-sm text-gray-300">Operations</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-sf-red text-xs mt-1 flex-shrink-0">&#9670;</span>
+                                <span class="text-sm text-gray-300">Coordination</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-sf-red text-xs mt-1 flex-shrink-0">&#9670;</span>
+                                <span class="text-sm text-gray-300">Cognitive Load</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-sf-red text-xs mt-1 flex-shrink-0">&#9670;</span>
+                                <span class="text-sm text-gray-300">Opportunity Cost</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 3 -->
+                    <div class="mb-8">
+                        <div class="flex items-baseline gap-3 mb-3">
+                            <span class="font-display text-xl text-sf-red leading-none">03</span>
+                            <h4 class="text-base font-semibold text-white">The Three Filters</h4>
+                        </div>
+                        <p class="text-sm text-sf-muted leading-relaxed pl-9 mb-4">
+                            These filters function as economic instruments. A failure on any filter is a cost signal, not just a design signal.
+                        </p>
+                        <div class="pl-9 flex flex-col gap-3">
+                            <div class="flex items-start gap-3 p-3 bg-sf-surface border border-sf-border">
+                                <span class="font-display text-sm text-sf-red flex-shrink-0 mt-0.5">2 AM</span>
+                                <p class="text-sm text-gray-300">Can a tired, stressed engineer with no prior context debug this system at 2 AM without calling anyone?</p>
+                            </div>
+                            <div class="flex items-start gap-3 p-3 bg-sf-surface border border-sf-border">
+                                <span class="font-display text-sm text-sf-red flex-shrink-0 mt-0.5">HALF</span>
+                                <p class="text-sm text-gray-300">Have you built only what you know you need today, treating additional capacity as a hypothesis to be validated?</p>
+                            </div>
+                            <div class="flex items-start gap-3 p-3 bg-sf-surface border border-sf-border">
+                                <span class="font-display text-sm text-sf-red flex-shrink-0 mt-0.5">95%</span>
+                                <p class="text-sm text-gray-300">Does the design invest the most in the path that serves 95% of users, with edge cases on a budget?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 4 & 5 -->
+                    <div class="mb-8">
+                        <div class="flex items-baseline gap-3 mb-3">
+                            <span class="font-display text-xl text-sf-red leading-none">04</span>
+                            <h4 class="text-base font-semibold text-white">Business Justification &amp; Decision</h4>
+                        </div>
+                        <p class="text-sm text-sf-muted leading-relaxed pl-9">
+                            If you cannot complete the business justification with a specific, measurable value that exceeds the Architecture Tax, the simpler alternative is the right choice. The template forces that honesty.
+                        </p>
+                    </div>
+
+                    <!-- Download -->
+                    <div class="mt-8 pt-8 border-t border-sf-border flex flex-col sm:flex-row items-center gap-4">
+                        <a href="/docs/Architecture_Business_Case_Template.docx" download class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-sf-red hover:bg-sf-red-dark text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 18h16"/></svg>
+                            Download the Template (.docx)
+                        </a>
+                        <span class="text-sm text-sf-muted">Complete it before your discovery call</span>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-16 text-center animate-on-scroll">
+                    <p class="text-lg text-gray-300 max-w-xl mx-auto mb-10">
+                        Once you've worked through the template, schedule a free 30-minute discovery call. We'll review your answers together, and I'll tell you honestly whether the assessment is the right move for your team.
+                    </p>
+                    <a href="https://calendly.com/cwoodruff70/30-minutes" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-12 py-5 bg-sf-red hover:bg-sf-red-dark text-white font-display text-2xl tracking-[3px] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(227,27,35,0.25)] rounded-sm">
+                        Schedule Your Call
+                    </a>
+                    <p class="mt-6 text-sm text-sf-muted">
+                        Or email directly: <a href="mailto:cwoodruff@live.com" class="text-gray-300 underline underline-offset-4 hover:text-white transition-colors">cwoodruff@live.com</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
