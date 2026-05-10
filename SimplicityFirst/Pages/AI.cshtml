@@ -1,0 +1,350 @@
+@page "/ai"
+@model SimplicityFirst.Pages.AIModel
+@{
+    ViewData["Title"] = "Working with AI | Simplicity-First";
+}
+
+<!-- ============================================================ -->
+<!-- NAVIGATION                                                    -->
+<!-- ============================================================ -->
+<nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 bg-sf-black/90 border-b border-sf-border backdrop-blur-md" aria-label="Primary navigation">
+    <div class="max-w-content mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3 group">
+            <img src="/images/simplicityfirst.png" alt="Simplicity-First logo" width="40" height="40" class="w-10 h-10" />
+            <span class="font-display text-2xl tracking-wide text-white group-hover:text-sf-red transition-colors">Simplicity-First</span>
+        </a>
+        <a href="/" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">&larr; Back to Home</a>
+    </div>
+</nav>
+
+<main id="main-content">
+
+    <!-- ============================================================ -->
+    <!-- HERO                                                          -->
+    <!-- ============================================================ -->
+    <section class="hero-pattern relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden" aria-label="Working with AI">
+        <div class="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none" style="background: linear-gradient(135deg, transparent 40%, #E31B23 40%, #E31B23 41%, transparent 41%);"></div>
+        <div class="absolute bottom-10 left-10 opacity-10 pointer-events-none">
+            <div class="diamond" style="width:80px;height:80px;"></div>
+        </div>
+
+        <div class="max-w-content mx-auto px-6">
+            <p class="text-xs font-semibold uppercase tracking-[4px] text-sf-red mb-6 animate-on-scroll">Simplicity-First &times; AI</p>
+
+            <h1 class="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-tight leading-none animate-on-scroll stagger-1">
+                AI Is an Amplifier, <span class="text-sf-red">Not a Simplifier.</span>
+            </h1>
+
+            <p class="mt-8 text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl animate-on-scroll stagger-2">
+                Without constraints, AI helps teams build complexity faster. With the right constraints, AI becomes the most powerful simplicity tool a team has ever had. The four skills below are those constraints &mdash; ready-to-use Claude skill files that bake the Simplicity-First philosophy into how your AI assistant designs, reviews, and audits code.
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row gap-4 animate-on-scroll stagger-3">
+                <a href="#skills" class="inline-flex items-center justify-center px-8 py-4 bg-sf-red hover:bg-sf-red-dark text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                    Browse the Skills &darr;
+                </a>
+                <a href="#how-it-works" class="inline-flex items-center justify-center px-8 py-4 border border-sf-border hover:border-sf-red text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                    How Skills Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- WHY                                                           -->
+    <!-- ============================================================ -->
+    <section class="relative py-20 lg:py-24 bg-sf-surface" aria-label="Why this matters">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="animate-on-scroll">
+                <div class="accent-line mb-6"></div>
+                <h2 class="font-display text-4xl md:text-5xl tracking-tight">Why Simplicity-First Matters More When AI Is Writing Code</h2>
+            </div>
+
+            <div class="mt-10 space-y-6 text-lg text-gray-300 leading-relaxed">
+                <p class="animate-on-scroll">
+                    AI assistants default to comprehensive solutions. Comprehensive means complex. They reach for microservices when a module would do, suggest plugin systems when one implementation exists, and generate elaborate abstractions for problems that don't yet exist.
+                </p>
+                <p class="animate-on-scroll">
+                    They also ship faster than human review can absorb. Working code lands in pull requests before anyone has formed an opinion about whether the approach is right. Cognitive debt &mdash; code the team does not understand well enough to change safely &mdash; compounds silently.
+                </p>
+                <p class="animate-on-scroll text-xl text-white font-semibold">
+                    The skills on this page are the constraint set that flips that default. They tell your AI assistant to design for the 2 AM engineer, build half of what it thinks you need, and refuse to merge what the author can't explain.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- HOW IT WORKS                                                  -->
+    <!-- ============================================================ -->
+    <section id="how-it-works" class="relative py-20 lg:py-24" aria-label="How skills work">
+        <div class="max-w-content mx-auto px-6">
+            <div class="animate-on-scroll">
+                <div class="accent-line mb-6"></div>
+                <h2 class="font-display text-4xl md:text-5xl tracking-tight">How Claude Skills Work</h2>
+                <p class="mt-4 text-lg text-sf-muted max-w-3xl">A skill is a packaged set of instructions that activates automatically when Claude detects the right kind of request. You install it once. It applies on every relevant task.</p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Step 1 -->
+                <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll stagger-1">
+                    <div class="font-display text-4xl text-sf-red leading-none mb-3">01</div>
+                    <h3 class="font-display text-2xl tracking-tight mb-3">Download</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Each skill is a single <code class="font-mono text-xs text-sf-red">.skill</code> file. Pick the ones that match the work your team does &mdash; architecture design, code review, PR readiness, codebase audits.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll stagger-2">
+                    <div class="font-display text-4xl text-sf-red leading-none mb-3">02</div>
+                    <h3 class="font-display text-2xl tracking-tight mb-3">Install</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Install the skill in Claude (or any AI assistant that supports the skill format). Each skill includes a <code class="font-mono text-xs text-sf-red">SKILL.md</code> file with the full instruction set.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="card-hover bg-sf-surface border border-sf-border rounded-sm p-6 animate-on-scroll stagger-3">
+                    <div class="font-display text-4xl text-sf-red leading-none mb-3">03</div>
+                    <h3 class="font-display text-2xl tracking-tight mb-3">Use</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Ask normally. The skill activates when your request matches its triggers &mdash; you don't need to invoke it by name. The output comes back filtered through Simplicity-First.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SKILLS                                                        -->
+    <!-- ============================================================ -->
+    <section id="skills" class="relative py-20 lg:py-24 bg-sf-surface" aria-label="The Simplicity-First skills">
+        <div class="max-w-content mx-auto px-6">
+            <div class="animate-on-scroll">
+                <div class="accent-line mb-6"></div>
+                <h2 class="font-display text-5xl md:text-6xl tracking-tight">The Simplicity-First Skills Bundle</h2>
+                <p class="mt-4 text-lg text-sf-muted max-w-3xl">Four skills. Four moments where AI tends to add complexity. Four constraints that turn AI into a simplicity tool instead.</p>
+            </div>
+
+            <!-- Skill 1: simplicity-first-architect -->
+            <article class="mt-16 bg-sf-black border border-sf-border rounded-sm overflow-hidden animate-on-scroll" id="simplicity-first-architect">
+                <div class="border-t-2 border-sf-red px-8 py-8 lg:px-10 lg:py-10">
+                    <div class="lg:flex lg:gap-10 lg:items-start">
+                        <div class="lg:flex-shrink-0 lg:w-20 mb-4 lg:mb-0">
+                            <span class="font-display text-5xl text-sf-red leading-none">01</span>
+                        </div>
+                        <div class="lg:flex-1">
+                            <p class="font-mono text-xs text-sf-red mb-2">simplicity-first-architect.skill</p>
+                            <h3 class="font-display text-3xl md:text-4xl tracking-tight mb-4">Simplicity-First Architect</h3>
+                            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                                Applies the Simplicity-First philosophy to software architecture work. Goal: designs real teams can actually maintain at 2 AM, not designs that impress at a review board. Built around the three filters &mdash; the 2 AM Test, the Half-Rule, and Primary Path First.
+                            </p>
+
+                            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-wider text-sf-muted mb-3">When it activates</h4>
+                                    <ul class="space-y-2 text-sm text-gray-300">
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> &ldquo;Design a system for&hellip;&rdquo;</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> &ldquo;Microservices or a monolith?&rdquo;</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> &ldquo;Review this architecture&rdquo;</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> &ldquo;What pattern should I use for&hellip;&rdquo;</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-wider text-sf-muted mb-3">What you get back</h4>
+                                    <ul class="space-y-2 text-sm text-gray-300">
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> The design, lead with the primary path</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> What was considered and rejected, with reasons</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> A walkthrough of how the design holds up at 2 AM</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> Named seams for future expansion &mdash; not implemented</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <a href="/downloads/skills/simplicity-first-architect.skill" download
+                               class="inline-flex items-center gap-3 px-6 py-3 bg-sf-red hover:bg-sf-red-dark text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5" aria-hidden="true">
+                                    <path d="M12 3v12m0 0l-4-4m4 4l4-4" />
+                                    <path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" />
+                                </svg>
+                                Download simplicity-first-architect.skill
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Skill 2: simplicity-first-reviewer -->
+            <article class="mt-8 bg-sf-black border border-sf-border rounded-sm overflow-hidden animate-on-scroll" id="simplicity-first-reviewer">
+                <div class="border-t-2 border-sf-red px-8 py-8 lg:px-10 lg:py-10">
+                    <div class="lg:flex lg:gap-10 lg:items-start">
+                        <div class="lg:flex-shrink-0 lg:w-20 mb-4 lg:mb-0">
+                            <span class="font-display text-5xl text-sf-red leading-none">02</span>
+                        </div>
+                        <div class="lg:flex-1">
+                            <p class="font-mono text-xs text-sf-red mb-2">simplicity-first-reviewer.skill</p>
+                            <h3 class="font-display text-3xl md:text-4xl tracking-tight mb-4">Simplicity-First Reviewer</h3>
+                            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                                Reviews code changes through the Simplicity-First lens to catch unnecessary complexity before it ships. Generic AI reviewers catch style; this one catches what will hurt the team at 2 AM. Runs four checks: complexity additions, tribal-knowledge dependence, 2 AM impact, and whether a simpler alternative exists.
+                            </p>
+
+                            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-wider text-sf-muted mb-3">When it activates</h4>
+                                    <ul class="space-y-2 text-sm text-gray-300">
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> &ldquo;Review this PR / diff / patch&rdquo;</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> &ldquo;Should we merge this?&rdquo;</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> &ldquo;Did I miss anything in this code?&rdquo;</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> A diff or patch pasted with no instructions</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-wider text-sf-muted mb-3">What you get back</h4>
+                                    <ul class="space-y-2 text-sm text-gray-300">
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> A direct verdict: merge, revise, or reconsider</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> PASS / CONCERN / FAIL on each of the four checks</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> Concrete simpler alternatives, not vague hedges</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> Stricter checks on AI-generated code, not looser</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <a href="/downloads/skills/simplicity-first-reviewer.skill" download
+                               class="inline-flex items-center gap-3 px-6 py-3 bg-sf-red hover:bg-sf-red-dark text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5" aria-hidden="true">
+                                    <path d="M12 3v12m0 0l-4-4m4 4l4-4" />
+                                    <path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" />
+                                </svg>
+                                Download simplicity-first-reviewer.skill
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Skill 3: explain-or-dont-merge -->
+            <article class="mt-8 bg-sf-black border border-sf-border rounded-sm overflow-hidden animate-on-scroll" id="explain-or-dont-merge">
+                <div class="border-t-2 border-sf-red px-8 py-8 lg:px-10 lg:py-10">
+                    <div class="lg:flex lg:gap-10 lg:items-start">
+                        <div class="lg:flex-shrink-0 lg:w-20 mb-4 lg:mb-0">
+                            <span class="font-display text-5xl text-sf-red leading-none">03</span>
+                        </div>
+                        <div class="lg:flex-1">
+                            <p class="font-mono text-xs text-sf-red mb-2">explain-or-dont-merge.skill</p>
+                            <h3 class="font-display text-3xl md:text-4xl tracking-tight mb-4">Explain or Don't Merge</h3>
+                            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                                Prevents cognitive debt at the place where it accumulates: pull request time. The rule is simple. If the author can't explain the change in their own words, the change does not merge. Whether they wrote it themselves or had Copilot, Cursor, or Claude Code generate it.
+                            </p>
+
+                            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-wider text-sf-muted mb-3">When it activates</h4>
+                                    <ul class="space-y-2 text-sm text-gray-300">
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> &ldquo;Help me explain this PR&rdquo;</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> &ldquo;I had Claude write this. Should I merge it?&rdquo;</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> &ldquo;Is this ready to merge?&rdquo;</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> Generated code pasted with &ldquo;OK to ship?&rdquo;</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-wider text-sf-muted mb-3">What you get back</h4>
+                                    <ul class="space-y-2 text-sm text-gray-300">
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> Four questions to walk through in your own words</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> An honest evaluation of whether the explanation matches the code</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> A ready-to-paste PR description when you understand it</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> A clear &ldquo;not yet&rdquo; with named gaps when you don't</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <a href="/downloads/skills/explain-or-dont-merge.skill" download
+                               class="inline-flex items-center gap-3 px-6 py-3 bg-sf-red hover:bg-sf-red-dark text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5" aria-hidden="true">
+                                    <path d="M12 3v12m0 0l-4-4m4 4l4-4" />
+                                    <path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" />
+                                </svg>
+                                Download explain-or-dont-merge.skill
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Skill 4: simplicity-audit -->
+            <article class="mt-8 bg-sf-black border border-sf-border rounded-sm overflow-hidden animate-on-scroll" id="simplicity-audit">
+                <div class="border-t-2 border-sf-red px-8 py-8 lg:px-10 lg:py-10">
+                    <div class="lg:flex lg:gap-10 lg:items-start">
+                        <div class="lg:flex-shrink-0 lg:w-20 mb-4 lg:mb-0">
+                            <span class="font-display text-5xl text-sf-red leading-none">04</span>
+                        </div>
+                        <div class="lg:flex-1">
+                            <p class="font-mono text-xs text-sf-red mb-2">simplicity-audit.skill</p>
+                            <h3 class="font-display text-3xl md:text-4xl tracking-tight mb-4">Simplicity Audit</h3>
+                            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                                The offensive use of AI: instead of letting it add complexity, use it to find and eliminate the complexity that's already there. Audits an existing codebase through the four 2 AM dimensions &mdash; discoverability, traceability, change safety, and cognitive load &mdash; and produces a ranked list of complexity hotspots with proposed simplifications.
+                            </p>
+
+                            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-wider text-sf-muted mb-3">When it activates</h4>
+                                    <ul class="space-y-2 text-sm text-gray-300">
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> &ldquo;Audit this codebase&rdquo;</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> &ldquo;Where is the complexity in our system?&rdquo;</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> &ldquo;What should we refactor?&rdquo;</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> &ldquo;Where would a new engineer get stuck?&rdquo;</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-wider text-sf-muted mb-3">What you get back</h4>
+                                    <ul class="space-y-2 text-sm text-gray-300">
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> Up to five complexity hotspots, ranked by severity</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> Specific files, the failure scenario, and effort estimate</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> Proposed simplifications that preserve current behavior</li>
+                                        <li class="flex gap-2"><span class="text-sf-red flex-shrink-0">&rsaquo;</span> An honest accounting of what the audit could not see</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <a href="/downloads/skills/simplicity-audit.skill" download
+                               class="inline-flex items-center gap-3 px-6 py-3 bg-sf-red hover:bg-sf-red-dark text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5" aria-hidden="true">
+                                    <path d="M12 3v12m0 0l-4-4m4 4l4-4" />
+                                    <path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" />
+                                </svg>
+                                Download simplicity-audit.skill
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- CLOSING                                                       -->
+    <!-- ============================================================ -->
+    <section class="relative py-20 lg:py-24" aria-label="Closing">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <div class="animate-on-scroll">
+                <div class="accent-line mx-auto mb-6"></div>
+                <h2 class="font-display text-4xl md:text-5xl tracking-tight">Use AI to Subtract.</h2>
+                <p class="mt-6 text-lg text-gray-300 leading-relaxed">
+                    Every line AI helps you delete is energy you no longer consume, code you no longer maintain, and one less thing for a tired engineer to get lost in at 2 AM.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/manifesto" class="inline-flex items-center justify-center px-8 py-4 bg-sf-red hover:bg-sf-red-dark text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                        Read the Manifesto &rarr;
+                    </a>
+                    <a href="/ArchAssessment" class="inline-flex items-center justify-center px-8 py-4 border border-sf-border hover:border-sf-red text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                        Architecture Assessment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ============================================================ -->
+<!-- FOOTER                                                        -->
+<!-- ============================================================ -->
+<footer class="border-t border-sf-border py-10 text-center" aria-label="Site footer">
+    <div class="max-w-content mx-auto px-6">
+        <p class="text-sm text-sf-muted tracking-wide">
+            &copy; 2026 <a href="/" class="text-gray-300 hover:text-white transition-colors">Woody Technology Studio LLC</a> &nbsp;&middot;&nbsp; <a href="/" class="text-gray-300 hover:text-white transition-colors">simplicity-first.dev</a>
+        </p>
+    </div>
+</footer>

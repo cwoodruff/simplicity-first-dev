@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Volumes/extra/Git/simplicity-first-dev/SimplicityFirst/SimplicityFirst.csproj": {}
+    "/Users/cwoodruff/Git/simplicity-first-dev/SimplicityFirst/SimplicityFirst.csproj": {}
   },
   "projects": {
-    "/Volumes/extra/Git/simplicity-first-dev/SimplicityFirst/SimplicityFirst.csproj": {
+    "/Users/cwoodruff/Git/simplicity-first-dev/SimplicityFirst/SimplicityFirst.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/extra/Git/simplicity-first-dev/SimplicityFirst/SimplicityFirst.csproj",
+        "projectUniqueName": "/Users/cwoodruff/Git/simplicity-first-dev/SimplicityFirst/SimplicityFirst.csproj",
         "projectName": "SimplicityFirst",
-        "projectPath": "/Volumes/extra/Git/simplicity-first-dev/SimplicityFirst/SimplicityFirst.csproj",
+        "projectPath": "/Users/cwoodruff/Git/simplicity-first-dev/SimplicityFirst/SimplicityFirst.csproj",
         "packagesPath": "/Users/cwoodruff/.nuget/packages/",
-        "outputPath": "/Volumes/extra/Git/simplicity-first-dev/SimplicityFirst/obj/",
+        "outputPath": "/Users/cwoodruff/Git/simplicity-first-dev/SimplicityFirst/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/cwoodruff/.nuget/NuGet/NuGet.Config"
@@ -38,15 +38,19 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "11.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.15.1, )"
+            },
             "Markdig": {
               "target": "Package",
-              "version": "[0.45.0, )"
+              "version": "[1.1.1, )"
             }
           },
           "imports": [
@@ -60,20 +64,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[10.0.2, 10.0.2]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-arm64",
-              "version": "[10.0.2, 10.0.2]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[10.0.2, 10.0.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -82,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/11.0.100-preview.1.26104.118/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.203/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

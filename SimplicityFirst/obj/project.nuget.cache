@@ -1,13 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "+01ewQ4hxns=",
+  "dgSpecHash": "WpOk0WTIYLI=",
   "success": true,
-  "projectFilePath": "/Volumes/extra/Git/simplicity-first-dev/SimplicityFirst/SimplicityFirst.csproj",
+  "projectFilePath": "/Users/cwoodruff/Git/simplicity-first-dev/SimplicityFirst/SimplicityFirst.csproj",
   "expectedPackageFiles": [
-    "/Users/cwoodruff/.nuget/packages/markdig/0.45.0/markdig.0.45.0.nupkg.sha512",
-    "/Users/cwoodruff/.nuget/packages/microsoft.netcore.app.ref/10.0.2/microsoft.netcore.app.ref.10.0.2.nupkg.sha512",
-    "/Users/cwoodruff/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.2/microsoft.aspnetcore.app.ref.10.0.2.nupkg.sha512",
-    "/Users/cwoodruff/.nuget/packages/microsoft.netcore.app.host.osx-arm64/10.0.2/microsoft.netcore.app.host.osx-arm64.10.0.2.nupkg.sha512"
+    "/Users/cwoodruff/.nuget/packages/bouncycastle.cryptography/2.6.2/bouncycastle.cryptography.2.6.2.nupkg.sha512",
+    "/Users/cwoodruff/.nuget/packages/mailkit/4.15.1/mailkit.4.15.1.nupkg.sha512",
+    "/Users/cwoodruff/.nuget/packages/markdig/1.1.1/markdig.1.1.1.nupkg.sha512",
+    "/Users/cwoodruff/.nuget/packages/mimekit/4.15.1/mimekit.4.15.1.nupkg.sha512",
+    "/Users/cwoodruff/.nuget/packages/system.security.cryptography.pkcs/10.0.0/system.security.cryptography.pkcs.10.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'MailKit' 4.15.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-9j88-vvj5-vhgr",
+      "projectPath": "/Users/cwoodruff/Git/simplicity-first-dev/SimplicityFirst/SimplicityFirst.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/cwoodruff/Git/simplicity-first-dev/SimplicityFirst/SimplicityFirst.csproj",
+      "libraryId": "MailKit",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }
