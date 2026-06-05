@@ -62,4 +62,4 @@ There are exciting opportunities for deeper collaboration between the Simplicity
 
 ## Conclusion
 
-Simplicity in software design is more than a path to elegance or efficiency. It's a pathway to environmental responsibility. The Simplicity-First initiative offers a robust framework for reducing complexity, and in doing so, it supports Green Software's goals: building better systems for people and the planet. As software professionals, we are stewards of both technology and the world it shapes. By embracing simplicity, we do more than build better software; we help build a better future.
+Simplicity in software design is more than a path to elegance or efficiency. It's a pathway to environmental responsibility. The Simplicity-First initiative offers a practical framework for reducing complexity, and in doing so, it supports Green Software's goals: building better systems for people and the planet. As software professionals, we are stewards of both technology and the world it shapes. By embracing simplicity, we do more than build better software; we help build a better future.
