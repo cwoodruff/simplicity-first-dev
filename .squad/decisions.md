@@ -41,6 +41,36 @@
 
 **Recommendation:** Reference in copilot-instructions.md as-is; style enforcement and test infrastructure to be added separately.
 
+### Decision: Brand Redesign Plan Decomposition into GitHub Issues
+- **Author:** Neo (Lead)
+- **Date:** 2026-06-05T12:13:24.493-04:00
+- **Status:** Implemented
+
+Decomposed the Simplicity-First Brand Redesign Plan (4 phases, 62 lines) into 11 GitHub issues, organized by phase. Milestones created as phase containers. Issues include concrete acceptance criteria, references to plan sections, and enough detail for implementation without constant plan re-reading.
+
+**Phases & Issue Mapping:**
+- **Phase 1 (Truth Pass):** 4 issues — fix pricing, book parts, banned words, site audit
+- **Phase 2 (Hero Discipline):** 3 issues — strip generic copy, standardize templates, fix logo collision
+- **Phase 3 (Method in 60s):** 2 issues — add filters card section, compress philosophy quotes
+- **Phase 4 (Flow & Conversion):** 2 issues — resequence narrative, enable content visibility
+
+**Key choices:** One issue per discrete user-visible outcome; acceptance criteria prioritize verifiability; phase dependencies and rationale documented in issues.
+
+### Decision: Playwright MCP Server Configuration
+- **Author:** Switch (Backend Dev)
+- **Date:** 2026-06-05T11:52:08.151-04:00
+- **Status:** Implemented
+
+Added Playwright MCP server entry to `.copilot/mcp-config.json`:
+```json
+"playwright": {
+  "command": "npx",
+  "args": ["-y", "@anthropic/playwright-mcp-server"]
+}
+```
+
+Follows existing config pattern (npx, args array). No secrets required. Enables Copilot agents and developers to use Playwright MCP for browser automation without additional setup.
+
 ## Governance
 
 - All meaningful changes require team consensus
