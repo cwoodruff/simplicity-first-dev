@@ -44,6 +44,16 @@
 - **Routing applied:** Per `.squad/routing.md` — page UX/copy → Trinity; testing/audit → Tank
 - **COMPLETION NOTICE (2026-06-05T16:20:47Z):** Trinity delivered all 3 copy fixes (#1, #2, #3) on draft PR #12 (squad/1-phase1-truth-pass-copy-fixes). Pricing tiers fixed, homepage reads "seven parts", banned words removed, site builds cleanly.
 
+### 2026-06-05 — Phase 1 ("Truth Pass") Milestone Closed
+- **Task:** Close Phase 1 milestone and all 4 credibility-fix issues (#1, #2, #3, #4) after verification.
+- **Outcome:** All issues closed and milestone marked complete.
+  - #1 (pricing), #2 (book parts), #3 (banned words) → resolved by Trinity via merged PR #12
+  - #4 (site audit) → verified by Tank; no violations found post-merge
+- **Work Delivered:** Copy-only fixes grouped in single PR. No code changes. All 3 issues resolved atomically; audit confirmed compliance.
+- **Decision Doc:** Written to `.squad/decisions/inbox/neo-phase1-closeout.md` — explains what was fixed, key insight (editorial work scales well with parallelism), and readiness for Phase 2.
+- **Phase 2 Status:** Ready to proceed. Issues #5–#7 queued.
+- **Scribe Update (2026-06-05T17:00:52Z):** Phase 1 closeout decision merged to `.squad/decisions.md`. All inbox files cleared. Team histories updated. Orchestration and session logs created.
+
 ### 2026-06-04 — Gated book download plan
 - **Current subscribe flow:** `Index.cshtml` htmx form POSTs `SubscriberEmail` to `OnPostSubscribeAsync` (`/?handler=Subscribe`), validated by DataAnnotations, persisted by `FileSubscriberStore` (singleton, SemaphoreSlim, CSV `Email,SubscribedAtUtc` at `Data/subscribers.csv`). Returns `_SubscribeResult` partial; `data-show-modal` triggers thank-you modal. `Subscribers.cshtml` is an admin list.
 - **Download precedent:** worksheet PDF is served UNGATED as a static file (`wwwroot/docs/...`). Book download must NOT follow this pattern — it must be gated.

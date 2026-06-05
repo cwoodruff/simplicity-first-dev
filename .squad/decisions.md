@@ -1,5 +1,30 @@
 # Squad Decisions
 
+## Completed Phases
+
+### Decision: Phase 1 ("Truth Pass") Closeout
+- **Author:** Neo (Lead)
+- **Date:** 2026-06-05T12:58:47.201-04:00
+- **Status:** Completed
+
+Phase 1 ("Truth Pass") milestone is now closed. All 4 credibility-fix issues (#1, #2, #3, #4) are resolved and verified.
+
+**Issues Closed:**
+| Issue | Title | Owner | Status |
+|-------|-------|-------|--------|
+| #1 | Fix pricing contradiction | Trinity | ✓ Merged (PR #12) |
+| #2 | Fix book parts count | Trinity | ✓ Merged (PR #12) |
+| #3 | Remove banned words | Trinity | ✓ Merged (PR #12) |
+| #4 | Run full site audit | Tank | ✓ Verified |
+
+**Outcome:** PR #12 ("fix: phase 1 truth-pass copy credibility leaks") merged to `dev`, resolving #1–#3 in a single grouped commit. Tank's audit (#4) confirmed zero banned-words violations post-merge.
+
+**Key Insight:** Phase 1 work was purely editorial — no code changes, no dependencies, high-quality copy review. Delivery was fast and parallel-safe because each issue touched isolated text.
+
+**Next:** Phase 2 ("Hero Discipline") can now proceed. Issues #5–#7 are queued and ready for assignment.
+
+---
+
 ## Active Decisions
 
 ### Decision: Gated Book Download — Contact Capture in SQLite

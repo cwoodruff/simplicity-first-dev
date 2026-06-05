@@ -20,3 +20,4 @@
 - **Synergy:** Tank's audit (issue #4) feeds issue #3 — 3 violations documented in Index.cshtml (lines 626, 633, 813)
 - **Scope:** All 3 issues are isolated page/copy changes — can run in parallel
 - **COMPLETED (2026-06-05T16:20:47Z):** All 3 issues delivered on draft PR #12 (squad/1-phase1-truth-pass-copy-fixes). Pricing tiers fixed, homepage reads "seven parts", banned words removed, site builds cleanly.
+- **PHASE 1 CLOSED (2026-06-05T17:00:52Z):** Milestone and all associated issues (#1–#4) now closed. PR #12 merged to dev. Scribe documented closeout decision and updated team records.

@@ -32,3 +32,4 @@
 - **Acceptance:** AC satisfied. Audit method documented, violations logged, pre-publish checklist established.
 - **Scribe Update:** Tank's audit decision merged to `.squad/decisions.md` (2026-06-05T16:25:52Z). Feeding Trinity's issue #3 (copy fixes).
 - **COMPLETION NOTICE (2026-06-05T16:20:47Z):** Trinity delivered Phase 1 copy fixes (#1, #2, #3) on draft PR #12. All banned words removed, pricing fixed, homepage reads "seven parts", site builds cleanly.
+- **PHASE 1 CLOSED (2026-06-05T17:00:52Z):** Issue #4 closed. All Phase 1 objectives verified. Scribe finalized milestone closeout and updated team records.
