@@ -9,6 +9,16 @@
 
 - Team initialized to plan and deliver a book download flow that captures contact details into SQLite.
 
+### 2026-06-05 — Brand Redesign Plan Decomposed into GitHub Issues
+- **Task:** Convert Simplicity-First Brand Redesign Plan (markdown, 4 phases) into GitHub milestones and actionable issues.
+- **Outcome:** 4 milestones created; 11 issues derived and assigned (Phase 1: 4, Phase 2: 3, Phase 3: 2, Phase 4: 2).
+- **Key insight:** Plan's "Tier 1 credibility leaks" justified as 4 independent, testable issues — not a monolithic "truth pass." Phase 3 split into parallel-safe subtasks (cards vs. blockquotes).
+- **Decision doc:** Written to `.squad/decisions/inbox/neo-brand-redesign-issues.md` — explains decomposition logic, dependencies, and issue boundaries.
+- **Decomposition principle:** One issue = one user-visible outcome, with concrete acceptance criteria, desktop/mobile testing, and brand consistency verification.
+- **Sequencing:** Phase 1 (credibility) → Phase 2 (hero discipline) → Phase 3 (method) → Phase 4 (flow). Phases 2–3 can proceed in parallel; Phase 4 waits on Phase 3.
+- **Tool choice:** GitHub REST API (`gh api repos/.../milestones`) used for milestone creation (no `gh milestone` subcommand in active version).
+- **Future work:** Scribe will merge decision doc to `.squad/decisions.md`. Team can assign issues and begin work from Phase 1.
+
 ### 2026-06-05 — Copilot Instructions Onboarding
 - **Outcome:** Created `.github/copilot-instructions.md` (348 lines) to onboard future Copilot sessions.
 - **Coverage:** Quick start (build/run), architecture (Razor Pages + Services layer, CSV → SQLite migration path), philosophy (2 AM Test, Half-Rule, Primary Path First), conventions (C# 14, DataAnnotations, DI pattern), squad context (routing, branch naming, decision workflow), common tasks (new page, new service, email, essay, SQLite migration), error handling, dependencies, git workflow, troubleshooting.
@@ -21,6 +31,18 @@
 - **Scribe revision:** Reduced instructions from 295 lines (8,500 words) to 141 lines (3,100 words) — ~63% reduction while keeping all repository-specific guidance
 - **Final outcome:** `.github/copilot-instructions.md` now concise, high-signal reference for all Copilot agents
 - **Integration:** All sections repositioned to justify inclusion; philosophy checklist, squad context, and git workflow retained; common tasks/troubleshooting/paths removed as generic
+
+### 2026-06-05 — Phase 1 ("Truth Pass") Milestone Triaged & Issues Assigned
+- **Task:** Triage GitHub milestone "Phase 1: Truth Pass" (4 copy/content fix issues); assign to Trinity and Tank; document sequencing.
+- **Outcome:** All 4 issues assigned and ready to start:
+  - #1, #2, #3 → squad:trinity (copy fixes: pricing, book parts, banned words)
+  - #4 → squad:tank (audit verification)
+- **Squads created:** Established 5 squad member labels (squad:trinity, squad:tank, squad:neo, squad:switch, squad base label)
+- **Triage comments:** Added clear triage notes to each issue explaining assignment rationale, blockers, and sequencing
+- **Parallelism:** All 4 issues can start immediately; no cross-layer dependencies; audit (#4) validates copy removal (#3)
+- **Decision doc:** Written to `.squad/decisions/inbox/neo-phase1-assignment.md` explaining routing, parallelism, and label creation
+- **Routing applied:** Per `.squad/routing.md` — page UX/copy → Trinity; testing/audit → Tank
+- **COMPLETION NOTICE (2026-06-05T16:20:47Z):** Trinity delivered all 3 copy fixes (#1, #2, #3) on draft PR #12 (squad/1-phase1-truth-pass-copy-fixes). Pricing tiers fixed, homepage reads "seven parts", banned words removed, site builds cleanly.
 
 ### 2026-06-04 — Gated book download plan
 - **Current subscribe flow:** `Index.cshtml` htmx form POSTs `SubscriberEmail` to `OnPostSubscribeAsync` (`/?handler=Subscribe`), validated by DataAnnotations, persisted by `FileSubscriberStore` (singleton, SemaphoreSlim, CSV `Email,SubscribedAtUtc` at `Data/subscribers.csv`). Returns `_SubscribeResult` partial; `data-show-modal` triggers thank-you modal. `Subscribers.cshtml` is an admin list.

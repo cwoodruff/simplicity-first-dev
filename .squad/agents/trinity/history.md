@@ -19,3 +19,4 @@
 - **Status:** All 3 ready to start immediately (no blockers)
 - **Synergy:** Tank's audit (issue #4) feeds issue #3 — 3 violations documented in Index.cshtml (lines 626, 633, 813)
 - **Scope:** All 3 issues are isolated page/copy changes — can run in parallel
+- **COMPLETED (2026-06-05T16:20:47Z):** All 3 issues delivered on draft PR #12 (squad/1-phase1-truth-pass-copy-fixes). Pricing tiers fixed, homepage reads "seven parts", banned words removed, site builds cleanly.
