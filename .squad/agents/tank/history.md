@@ -17,3 +17,17 @@
 - **Lint status:** ✅ `dotnet format` available; no `.editorconfig` or style rules defined
 - **Role:** Validated Neo's copilot-instructions draft against actual project state; provided feedback rejecting generic ASP.NET content; supplied verified commands for Scribe to reference
 - **Outcome:** Decision captured and ready for copilot-instructions.md reference when needed
+
+### 2026-06-05 — Phase 1 Banned-Words Audit (Issue #4)
+- **Status:** ✅ Complete. Violations documented. Ready for Trinity (copy).
+- **Time:** Audit completed 2026-06-05T16:23:49Z
+- **Findings:** 3 violations of 2 banned words (cutting-edge, robust) — all in Index.cshtml
+  - Line 626: "...cutting-edge libraries..." (essay preview fallback)
+  - Line 633: "...robustness." (essay preview fallback)
+  - Line 813: "...robust software solutions." (author bio)
+- **Clear:** Manifesto.cshtml, AI.cshtml, ArchAssessment.cshtml, manifesto.md, all essay markdown files
+- **Audit scope:** Systematic grep across all 4 primary pages + 5 essay markdown files
+- **Output:** Issue comment + decision memo in `.squad/decisions/inbox/tank-phase1-audit.md`
+- **Risk:** All violations visible on homepage (high credibility impact). Focused fix—three phrases in one file.
+- **Acceptance:** AC satisfied. Audit method documented, violations logged, pre-publish checklist established.
+- **Scribe Update:** Tank's audit decision merged to `.squad/decisions.md` (2026-06-05T16:25:52Z). Feeding Trinity's issue #3 (copy fixes).

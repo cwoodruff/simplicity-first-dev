@@ -71,6 +71,39 @@ Added Playwright MCP server entry to `.copilot/mcp-config.json`:
 
 Follows existing config pattern (npx, args array). No secrets required. Enables Copilot agents and developers to use Playwright MCP for browser automation without additional setup.
 
+### Decision: Phase 1 — Truth Pass Issue Assignment & Sequencing
+- **Author:** Neo (Lead)
+- **Date:** 2026-06-05T12:20:47.659-04:00
+- **Status:** Executed
+
+Triaged and assigned all 4 Phase 1 ("Truth Pass") issues from the GitHub milestone. Created squad member labels and routed work per team routing rules.
+
+**Assignment:**
+- **#1 Fix pricing contradiction** → Trinity (Frontend Dev)
+- **#2 Fix book parts count** → Trinity (Frontend Dev)
+- **#3 Remove banned words from site copy** → Trinity (Frontend Dev)
+- **#4 Run full site copy audit** → Tank (Tester)
+
+**Rationale:** All 4 issues can start in parallel. No cross-layer dependencies; each is isolated page/copy change.
+
+### Decision: Tank Phase 1 Audit — Banned-Words Violations
+- **Author:** Tank (Tester)
+- **Date:** 2026-06-05T12:20:47.659-04:00
+- **Status:** Audit Complete
+
+Banned-words audit completed across all primary pages (Index, Manifesto, AI, Assessment) and essay markdown.
+
+**Violations Found: 2 words across 3 instances, all in Index.cshtml:**
+1. "cutting-edge" — line 626 (essay preview card fallback text)
+2. "robust" — line 633 (essay preview card fallback text)
+3. "robust" — line 813 (author bio paragraph)
+
+**Impact:** High on lines 626, 633 (visible on front page); Critical on line 813 (author bio, trust-building point).
+
+**Fix Owner:** Trinity (copy). Single focused edit of three phrases achieves full compliance.
+
+**Audit Scope:** Index.cshtml, Manifesto.cshtml, AI.cshtml, ArchAssessment.cshtml, manifesto.md, Essays/* — No violations in Manifesto.cshtml, AI.cshtml, ArchAssessment.cshtml, or essay markdown.
+
 ## Governance
 
 - All meaningful changes require team consensus
