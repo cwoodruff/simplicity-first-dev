@@ -129,6 +129,31 @@ Banned-words audit completed across all primary pages (Index, Manifesto, AI, Ass
 
 **Audit Scope:** Index.cshtml, Manifesto.cshtml, AI.cshtml, ArchAssessment.cshtml, manifesto.md, Essays/* — No violations in Manifesto.cshtml, AI.cshtml, ArchAssessment.cshtml, or essay markdown.
 
+### Decision: Phase 2 ("Hero Discipline") Issue Assignment & Sequencing
+- **Author:** Neo (Lead)
+- **Date:** 2026-06-05T13:01:28.925-04:00
+- **Status:** Executed
+
+Triaged and assigned all 3 Phase 2 ("Hero Discipline") issues from the GitHub milestone. All assigned to Trinity as one coordinated hero pass.
+
+**Issues Assigned:**
+| Issue | Title | Owner | Status |
+|-------|-------|-------|--------|
+| #5 | Strip generic paragraph from hero sections | Trinity | squad:trinity |
+| #6 | Standardize all four heroes on Assessment template | Trinity | squad:trinity |
+| #7 | Fix floating logo collision in hero | Trinity | squad:trinity |
+
+**Rationale:** All three issues are frontend-only fixes. Per routing, Page UX and forms route to Trinity. These form a coherent hero discipline pass with shared context (Assessment page and hero sections), low cross-dependency, and reduced review overhead when grouped.
+
+**Acceptance Criteria:**
+- Generic paragraph language removed from all hero sections
+- Assessment page hero sections follow established template pattern
+- Logo collision resolved; no regression on other sections
+- Desktop and mobile viewports tested; responsive layout holds
+- Brand consistency verified across all four heroes
+
+**Key Insight:** Hero discipline is a single coherent improvement. Grouping reduces cognitive overhead and improves consistency review, similar to Phase 1 Truth Pass.
+
 ## Governance
 
 - All meaningful changes require team consensus

@@ -54,6 +54,29 @@
 - **Phase 2 Status:** Ready to proceed. Issues #5–#7 queued.
 - **Scribe Update (2026-06-05T17:00:52Z):** Phase 1 closeout decision merged to `.squad/decisions.md`. All inbox files cleared. Team histories updated. Orchestration and session logs created.
 
+### 2026-06-05 — Phase 2 ("Hero Discipline") Milestone Triaged & Issues Assigned
+- **Task:** Triage GitHub milestone "Phase 2: Hero Discipline" (3 hero UX/layout/copy issues); assign to Trinity and start the milestone.
+- **Outcome:** All 3 issues assigned and ready to start:
+  - #5, #6, #7 → squad:trinity (hero fixes: strip boilerplate, standardize templates, fix logo collision)
+- **Grouping strategy:** All three hero fixes grouped as ONE coordinated pass in a single branch. Reduces cognitive overhead, ensures consistency, simplifies review.
+- **Triage comments:** Added clear triage notes to each issue explaining grouped workflow, assignment rationale, and sequential start plan.
+- **Parallelism:** All 3 issues can start immediately; no blockers; no cross-layer dependencies; desktop/mobile testing required for #7.
+- **Decision doc:** Written to `.squad/decisions/inbox/neo-phase2-assignment.md` explaining routing, grouping rationale, and acceptance criteria.
+- **Routing applied:** Per `.squad/routing.md` — page UX/layout → Trinity; all hero-related fixes together for consistency.
+
+### 2026-06-05 — Phase 2 Hero Discipline Pass Completion
+- **Completion date:** 2026-06-05T17:10:27Z
+- **Grouping outcome:** All 3 hero issues (#5, #6, #7) grouped into single coordinated pass on branch squad/5-phase2-hero-pass, draft PR #13
+- **Delivery summary:**
+  - Heroes standardized across all 4 surfaces (Index, Manifesto, AI, Assessment)
+  - Generic boilerplate removed from hero sections
+  - Logo collision fixed by moving homepage video below hero section
+  - Desktop and mobile responsive layout validated
+  - Site builds successfully
+  - Brand consistency verified across all pages
+- **Pattern insight:** Similar to Phase 1 Truth Pass — grouping editorial/UX work by common concern reduces review overhead and ensures consistency. Trinity's grouped approach delivered all 3 issues atomically.
+- **Phase 2 Status:** COMPLETE. Phase 3 (Method in 60s) ready to proceed.
+
 ### 2026-06-04 — Gated book download plan
 - **Current subscribe flow:** `Index.cshtml` htmx form POSTs `SubscriberEmail` to `OnPostSubscribeAsync` (`/?handler=Subscribe`), validated by DataAnnotations, persisted by `FileSubscriberStore` (singleton, SemaphoreSlim, CSV `Email,SubscribedAtUtc` at `Data/subscribers.csv`). Returns `_SubscribeResult` partial; `data-show-modal` triggers thank-you modal. `Subscribers.cshtml` is an admin list.
 - **Download precedent:** worksheet PDF is served UNGATED as a static file (`wwwroot/docs/...`). Book download must NOT follow this pattern — it must be gated.

@@ -21,3 +21,19 @@
 - **Scope:** All 3 issues are isolated page/copy changes — can run in parallel
 - **COMPLETED (2026-06-05T16:20:47Z):** All 3 issues delivered on draft PR #12 (squad/1-phase1-truth-pass-copy-fixes). Pricing tiers fixed, homepage reads "seven parts", banned words removed, site builds cleanly.
 - **PHASE 1 CLOSED (2026-06-05T17:00:52Z):** Milestone and all associated issues (#1–#4) now closed. PR #12 merged to dev. Scribe documented closeout decision and updated team records.
+
+### 2026-06-05 — Phase 2 Hero Discipline Pass Completion
+- **Assignment:** Neo assigned issues #5, #6, #7 to Trinity as grouped hero discipline pass (2026-06-05T13:01:28Z)
+  - **#5:** Strip generic paragraph from hero sections
+  - **#6:** Standardize all four heroes on Assessment template
+  - **#7:** Fix floating logo collision in hero
+- **Status:** COMPLETED (2026-06-05T17:10:27Z)
+- **Delivery:** All 3 issues grouped on branch squad/5-phase2-hero-pass, draft PR #13
+- **Outcome:**
+  - Heroes standardized across Index, Manifesto, AI, and Assessment pages
+  - Generic filler copy removed from hero sections
+  - Floating hero diamond/video collision fixed by moving homepage video below hero
+  - Site builds successfully
+  - Desktop and mobile responsive layout validated
+  - Brand consistency verified across all four heroes
+- **Key insight:** Grouping reduced cognitive overhead and ensured consistent hero discipline across all pages. Single PR review cycle validated patterns holistically.
