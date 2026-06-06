@@ -50,4 +50,12 @@ Initial setup complete. Scribe protocol workflow validated end-to-end.
 - Clear status tags (Executed, Proposed, Completed) enable quick scanning for active vs. historical
 - Orchestration logs decouple decision state from agent activity logs — keeps decisions.md focused on direction
 
+### 2026-06-05 — Phase 3 Closeout Documentation
+- **Status:** Completed (2026-06-05T21:40:40.114-04:00)
+- **Protocol:** Phase 3 inbox merged to decisions.md; orchestration log created; learnings appended
+- **Pattern validated:** Three-phase grouping strategy proven durable — editorial/UX work at 2–4 issue scale ships coherently when clustered by concern
+- **Card-based architecture:** Method section demonstrates responsive card design (Three Filters) with diagnostic questions — reusable pattern for future filter/lens-based content
+- **Flow validation:** hero → method → economics → philosophy optimizes reader velocity toward "knowledge quickly" principle
+- **Key insight:** Grouped passes reduce review surface area and ensure brand consistency — team executes faster with coherent concern grouping than scattered issue-by-issue fixes
+- **Recommendation for Phase 4:** Expect Flow & Conversion to benefit from same clustering pattern (narrative resequence + visibility toggle as paired concerns)
 
