@@ -16,9 +16,9 @@
         <div class="hidden md:flex items-center gap-8">
             <a href="#hero" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">Home</a>
             <a href="/manifesto" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">Manifesto</a>
-            <a href="#philosophy" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">Philosophy</a>
+            <a href="#method" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">The Method</a>
+            <a href="#philosophy" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">Why Complexity Wins</a>
             <a href="#book" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">The Book</a>
-            <a href="#filters" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">Three Filters</a>
             <a href="#essays" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">Essays</a>
             <a href="#author" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">Author</a>
             <a href="#connect" class="text-sm font-medium text-sf-muted hover:text-white transition-colors">Connect</a>
@@ -39,9 +39,9 @@
 <div id="mobile-menu" class="mobile-menu fixed inset-0 z-40 bg-sf-black/98 flex flex-col items-center justify-center gap-8 md:hidden" aria-label="Mobile navigation">
     <a href="#hero" class="font-display text-3xl tracking-wide text-white hover:text-sf-red transition-colors">Home</a>
     <a href="/manifesto" class="font-display text-3xl tracking-wide text-white hover:text-sf-red transition-colors">Manifesto</a>
-    <a href="#philosophy" class="font-display text-3xl tracking-wide text-white hover:text-sf-red transition-colors">Philosophy</a>
+    <a href="#method" class="font-display text-3xl tracking-wide text-white hover:text-sf-red transition-colors">The Method</a>
+    <a href="#philosophy" class="font-display text-3xl tracking-wide text-white hover:text-sf-red transition-colors">Why Complexity Wins</a>
     <a href="#book" class="font-display text-3xl tracking-wide text-white hover:text-sf-red transition-colors">The Book</a>
-    <a href="#filters" class="font-display text-3xl tracking-wide text-white hover:text-sf-red transition-colors">Three Filters</a>
     <a href="#essays" class="font-display text-3xl tracking-wide text-white hover:text-sf-red transition-colors">Essays</a>
     <a href="#author" class="font-display text-3xl tracking-wide text-white hover:text-sf-red transition-colors">Author</a>
     <a href="#connect" class="font-display text-3xl tracking-wide text-white hover:text-sf-red transition-colors">Connect</a>
@@ -88,9 +88,104 @@
                     <a href="/manifesto" class="inline-flex items-center justify-center px-8 py-4 bg-sf-red hover:bg-sf-red-dark text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
                         Read the Manifesto &rarr;
                     </a>
-                    <a href="/ArchAssessment" class="inline-flex items-center justify-center px-8 py-4 border border-sf-border hover:border-sf-red text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
-                        Take the Assessment
+                    <a href="#method" class="inline-flex items-center justify-center px-8 py-4 border border-sf-border hover:border-sf-red text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                        See the Method &#8595;
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 3. THE METHOD IN 60 SECONDS                                  -->
+    <!-- ============================================================ -->
+    <section id="method" class="relative py-20 lg:py-24 bg-sf-surface" aria-label="The Method in 60 Seconds">
+        <div class="max-w-content mx-auto px-6">
+            <div class="text-center animate-on-scroll">
+                <p class="text-xs font-semibold uppercase tracking-[4px] text-sf-red">The Method in 60 Seconds</p>
+                <h2 class="mt-4 font-display text-5xl md:text-6xl tracking-tight">Spot the trap. Run three filters. Keep the path clear.</h2>
+                <p class="mt-6 text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">The Complexity Trap starts when every reasonable addition survives review until the whole system becomes expensive to understand, change, and trust.</p>
+            </div>
+
+            <div class="mt-14 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+                <div class="card-hover bg-sf-black border border-sf-border rounded-sm p-8 animate-on-scroll stagger-1">
+                    <div class="flex items-center justify-between gap-4">
+                        <span class="font-mono text-xs uppercase tracking-[3px] text-sf-red">Filter 01</span>
+                        <span class="diamond" aria-hidden="true"></span>
+                    </div>
+                    <h3 class="mt-6 font-display text-3xl tracking-tight">The 2 AM Test</h3>
+                    <p class="mt-4 text-sf-red font-mono text-sm leading-relaxed">Could a tired, unfamiliar engineer trace the problem and fix it quickly?</p>
+                    <p class="mt-4 text-gray-400 leading-relaxed">If the answer is no, the system is carrying more moving parts than the team can safely operate.</p>
+                </div>
+
+                <div class="card-hover bg-sf-black border border-sf-border rounded-sm p-8 animate-on-scroll stagger-2">
+                    <div class="flex items-center justify-between gap-4">
+                        <span class="font-mono text-xs uppercase tracking-[3px] text-sf-red">Filter 02</span>
+                        <span class="diamond" aria-hidden="true"></span>
+                    </div>
+                    <h3 class="mt-6 font-display text-3xl tracking-tight">The Half-Rule</h3>
+                    <p class="mt-4 text-sf-red font-mono text-sm leading-relaxed">Are we building only what we know we need right now?</p>
+                    <p class="mt-4 text-gray-400 leading-relaxed">Ship the smallest useful version first, then let real demand earn the next layer of complexity.</p>
+                </div>
+
+                <div class="card-hover bg-sf-black border border-sf-border rounded-sm p-8 animate-on-scroll stagger-3">
+                    <div class="flex items-center justify-between gap-4">
+                        <span class="font-mono text-xs uppercase tracking-[3px] text-sf-red">Filter 03</span>
+                        <span class="diamond" aria-hidden="true"></span>
+                    </div>
+                    <h3 class="mt-6 font-display text-3xl tracking-tight">Primary Path First</h3>
+                    <p class="mt-4 text-sf-red font-mono text-sm leading-relaxed">Are we making the common path boring before we chase edge cases?</p>
+                    <p class="mt-4 text-gray-400 leading-relaxed">Protect the flow most people use, then isolate exceptions behind seams that do not slow everyone else down.</p>
+                </div>
+            </div>
+
+            <div class="mt-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 animate-on-scroll">
+                <p class="text-sm md:text-base text-sf-muted max-w-2xl">Use these three questions in architecture reviews, roadmap debates, and incident retros. If a decision fails the screen, simplify before you scale it.</p>
+                <div class="flex justify-center lg:justify-end">
+                    <a href="/docs/Simplicity_First_Three_Filters_Worksheet.pdf" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center gap-2 px-6 py-3 bg-sf-red text-white font-medium rounded-sm hover:bg-red-700 transition-colors">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5" aria-hidden="true">
+                            <path d="M12 3v12m0 0l-4-4m4 4l4-4" />
+                            <path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" />
+                        </svg>
+                        Download the Three Filters Worksheet
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 4. WHY COMPLEXITY WINS                                       -->
+    <!-- ============================================================ -->
+    <section id="philosophy" class="relative py-20 lg:py-24" aria-label="Why complexity wins">
+        <div class="max-w-content mx-auto px-6">
+            <div class="animate-on-scroll">
+                <div class="accent-line mb-6"></div>
+                <p class="text-xs font-semibold uppercase tracking-[4px] text-sf-red">Why Complexity Wins</p>
+                <h2 class="mt-4 font-display text-5xl md:text-6xl tracking-tight">Complexity rarely arrives as a bad idea.</h2>
+                <p class="mt-6 text-lg text-sf-muted max-w-3xl">It shows up as caution, ambition, and intelligence without a hard stopping rule. That is why the method has to be fast, memorable, and a little unforgiving.</p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+                <div class="border border-sf-border rounded-sm bg-sf-surface px-6 py-7 animate-on-scroll stagger-1">
+                    <p class="font-mono text-xs uppercase tracking-[3px] text-sf-red">Complexity Trap</p>
+                    <p class="mt-4 text-gray-300 leading-relaxed">Layers arrive one sensible decision at a time until nobody can see the whole path clearly anymore.</p>
+                </div>
+
+                <div class="border border-sf-border rounded-sm bg-sf-surface px-6 py-7 animate-on-scroll stagger-2">
+                    <p class="font-mono text-xs uppercase tracking-[3px] text-sf-red">Core Insight</p>
+                    <p class="mt-4 text-gray-300 leading-relaxed">Complexity often looks responsible because smart teams mistake extra structure for extra safety.</p>
+                </div>
+
+                <div class="border border-sf-border rounded-sm bg-sf-surface px-6 py-7 animate-on-scroll stagger-3">
+                    <p class="font-mono text-xs uppercase tracking-[3px] text-sf-red">What It Means</p>
+                    <p class="mt-4 text-gray-300 leading-relaxed">Start with the smallest system that works, then force every new dependency, abstraction, and service to earn its place.</p>
+                </div>
+
+                <div class="border border-sf-border rounded-sm bg-sf-surface px-6 py-7 animate-on-scroll stagger-4">
+                    <p class="font-mono text-xs uppercase tracking-[3px] text-sf-red">Operational Definition</p>
+                    <p class="mt-4 text-gray-300 leading-relaxed">If a tired, stressed, unfamiliar engineer cannot fix it quickly, the architecture is not simple yet.</p>
                 </div>
             </div>
         </div>
@@ -101,7 +196,7 @@
             <div class="animate-on-scroll">
                 <div class="accent-line mb-6"></div>
                 <h2 class="font-display text-4xl md:text-5xl tracking-tight">Watch the Overview</h2>
-                <p class="mt-4 text-lg text-sf-muted max-w-3xl">A quick walkthrough of the Simplicity-First argument before you dive into the essays, assessment, or tools.</p>
+                <p class="mt-4 text-lg text-sf-muted max-w-3xl">A quick walkthrough of the Simplicity-First argument after you have the method in your head.</p>
             </div>
 
             <div class="mt-10 animate-on-scroll stagger-1">
@@ -113,173 +208,6 @@
                             allowfullscreen>
                     </iframe>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================================ -->
-    <!-- 3. PHILOSOPHY SECTION                                        -->
-    <!-- ============================================================ -->
-    <section id="philosophy" class="relative py-24 lg:py-32" aria-label="The Simplicity-First Philosophy">
-        <div class="max-w-content mx-auto px-6">
-            <!-- Section Header -->
-            <div class="animate-on-scroll">
-                <div class="accent-line mb-6"></div>
-                <h2 class="font-display text-5xl md:text-6xl tracking-tight">The Simplicity-First Philosophy</h2>
-            </div>
-
-            <!-- Philosophy Cards -->
-            <div class="mt-16 space-y-16">
-
-                <!-- The Complexity Trap -->
-                <div class="animate-on-scroll lg:flex lg:gap-12 lg:items-start">
-                    <div class="lg:w-1/3 mb-4 lg:mb-0">
-                        <div class="flex items-center gap-3 mb-2">
-                            <span class="diamond"></span>
-                            <h3 class="font-display text-3xl md:text-4xl tracking-tight text-sf-red">What is the Complexity Trap?</h3>
-                        </div>
-                    </div>
-                    <div class="lg:w-2/3">
-                        <blockquote class="text-lg md:text-xl text-gray-300 leading-relaxed border-l-2 border-sf-red pl-6">
-                            The Complexity Trap is a self-reinforcing cycle where teams add layers, abstractions, services, and tools in the name of flexibility, scalability, or modernity &mdash; and end up with systems nobody fully understands or can safely change. Each addition seems reasonable in isolation. A new abstraction layer here. A message queue there. A microservice to handle that one thing that might need to scale independently someday. And then, six months later, nobody can ship a feature without touching seven repositories, consulting three different teams, and running a deployment pipeline that takes longer than the actual code change.
-                        </blockquote>
-                    </div>
-                </div>
-
-                <hr class="border-sf-border" />
-
-                <!-- The Core Insight -->
-                <div class="animate-on-scroll lg:flex lg:gap-12 lg:items-start">
-                    <div class="lg:w-1/3 mb-4 lg:mb-0">
-                        <div class="flex items-center gap-3 mb-2">
-                            <span class="diamond"></span>
-                            <h3 class="font-display text-3xl md:text-4xl tracking-tight text-sf-red">The Core Insight</h3>
-                        </div>
-                    </div>
-                    <div class="lg:w-2/3">
-                        <blockquote class="text-lg md:text-xl text-gray-300 leading-relaxed border-l-2 border-sf-red pl-6">
-                            Complexity isn't a sign of incompetence. It's frequently a sign of intelligence applied without the right constraints. The smartest engineers share a common trait: they're suspicious of complexity. They treat every new dependency as a cost to be justified, not a feature to be celebrated.
-                        </blockquote>
-                    </div>
-                </div>
-
-                <hr class="border-sf-border" />
-
-                <!-- What Simplicity-First Means -->
-                <div class="animate-on-scroll lg:flex lg:gap-12 lg:items-start">
-                    <div class="lg:w-1/3 mb-4 lg:mb-0">
-                        <div class="flex items-center gap-3 mb-2">
-                            <span class="diamond"></span>
-                            <h3 class="font-display text-3xl md:text-4xl tracking-tight text-sf-red">What Simplicity-First Means</h3>
-                        </div>
-                    </div>
-                    <div class="lg:w-2/3">
-                        <blockquote class="text-lg md:text-xl text-gray-300 leading-relaxed border-l-2 border-sf-red pl-6">
-                            Simplicity-First means starting simple, evolving incrementally, and adding complexity only when it demonstrably pays for itself. It means keeping architecture aligned with real needs by focusing on actual requirements rather than hypothetical scenarios. Every component earns its place. Every abstraction pays for itself. Every dependency gets justified.
-                        </blockquote>
-                    </div>
-                </div>
-
-                <hr class="border-sf-border" />
-
-                <!-- The Operational Definition -->
-                <div class="animate-on-scroll lg:flex lg:gap-12 lg:items-start">
-                    <div class="lg:w-1/3 mb-4 lg:mb-0">
-                        <div class="flex items-center gap-3 mb-2">
-                            <span class="diamond"></span>
-                            <h3 class="font-display text-3xl md:text-4xl tracking-tight text-sf-red">The Operational Definition</h3>
-                        </div>
-                    </div>
-                    <div class="lg:w-2/3">
-                        <blockquote class="text-lg md:text-xl text-gray-300 leading-relaxed border-l-2 border-sf-red pl-6">
-                            A system is simple if a tired, stressed, unfamiliar engineer can understand it well enough to fix it quickly. This definition has teeth. It does not care about elegant abstractions or clever patterns. It cares about one thing: can this system be operated under stress by normal humans?
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================================ -->
-    <!-- 4. THE THREE FILTERS SECTION                                 -->
-    <!-- ============================================================ -->
-    <section id="filters" class="relative py-24 lg:py-32 bg-sf-surface" aria-label="The Three Filters">
-        <div class="max-w-content mx-auto px-6">
-            <!-- Section Header -->
-            <div class="text-center animate-on-scroll">
-                <div class="accent-line mx-auto mb-6"></div>
-                <h2 class="font-display text-5xl md:text-6xl tracking-tight">Three Filters. One Goal.</h2>
-                <p class="mt-4 text-lg text-sf-muted max-w-2xl mx-auto">The Simplicity-First approach is built on three practical filters for evaluating every architectural decision.</p>
-            </div>
-
-            <!-- Filter Cards -->
-            <div class="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
-
-                <!-- Filter 1: The 2 AM Test -->
-                <div class="card-hover bg-sf-black border border-sf-border rounded-sm p-8 animate-on-scroll stagger-1">
-                    <div class="border-t-2 border-sf-red -mt-8 pt-8 -mx-8 px-8">
-                        <!-- Clock SVG Icon -->
-                        <div class="w-12 h-12 mb-6 text-sf-red">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-12 h-12" aria-hidden="true">
-                                <circle cx="12" cy="12" r="10" />
-                                <polyline points="12 6 12 12 16 14" />
-                            </svg>
-                        </div>
-                        <h3 class="font-display text-3xl tracking-tight mb-3">The 2 AM Test</h3>
-                        <p class="text-sf-red font-mono text-sm mb-4">Could a developer understand, troubleshoot, and resolve a production issue in this system at 2 AM, under stress, with limited support?</p>
-                        <p class="text-gray-400 leading-relaxed">
-                            The 2 AM Test is the operational definition of simplicity. It breaks down into four dimensions: Discoverability (can you find the problem?), Traceability (can you follow the request?), Change Safety (can you roll back safely?), and Cognitive Load (can someone who didn't write it fix it?). If your architecture can't survive a 2 AM wake-up call, it has failed the only test that really matters in production.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Filter 2: The Half-Rule -->
-                <div class="card-hover bg-sf-black border border-sf-border rounded-sm p-8 animate-on-scroll stagger-2">
-                    <div class="border-t-2 border-sf-red -mt-8 pt-8 -mx-8 px-8">
-                        <!-- Half Circle SVG Icon -->
-                        <div class="w-12 h-12 mb-6 text-sf-red">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-12 h-12" aria-hidden="true">
-                                <path d="M12 2a10 10 0 0 1 0 20" />
-                                <line x1="12" y1="2" x2="12" y2="22" stroke-dasharray="2 2" />
-                            </svg>
-                        </div>
-                        <h3 class="font-display text-3xl tracking-tight mb-3">The Half-Rule</h3>
-                        <p class="text-sf-red font-mono text-sm mb-4">Are we building only what we know we need?</p>
-                        <p class="text-gray-400 leading-relaxed">
-                            Build half of what you think you need. Treat the rest as a hypothesis to be tested, not a requirement to be fulfilled. Every team has a complexity budget &mdash; a real constraint on what your organization can handle. When teams overbuild early, they spend that budget on imaginary problems. The Half-Rule protects your budget for problems you know are real.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Filter 3: Primary Path First -->
-                <div class="card-hover bg-sf-black border border-sf-border rounded-sm p-8 animate-on-scroll stagger-3">
-                    <div class="border-t-2 border-sf-red -mt-8 pt-8 -mx-8 px-8">
-                        <!-- Arrow/Path SVG Icon -->
-                        <div class="w-12 h-12 mb-6 text-sf-red">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-12 h-12" aria-hidden="true">
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                                <polyline points="14 7 19 12 14 17" />
-                            </svg>
-                        </div>
-                        <h3 class="font-display text-3xl tracking-tight mb-3">Primary Path First</h3>
-                        <p class="text-sf-red font-mono text-sm mb-4">Are we designing for the 95% case or getting distracted by edge cases?</p>
-                        <p class="text-gray-400 leading-relaxed">
-                            Make the 80% path boring, resilient, and fast to understand. Keep the primary path simple. Contain edge cases behind seams. When the primary path is boring, everything else becomes easier. Testing becomes straightforward. Debugging becomes faster. Onboarding becomes smoother. Edge cases are real &mdash; the question is not whether to handle them, but where.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Worksheet Download -->
-            <div class="mt-12 text-center animate-on-scroll">
-                <a href="/docs/Simplicity_First_Three_Filters_Worksheet.pdf" target="_blank" rel="noopener noreferrer"
-                   class="inline-flex items-center gap-2 px-6 py-3 bg-sf-red text-white font-medium rounded-sm hover:bg-red-700 transition-colors">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5" aria-hidden="true">
-                        <path d="M12 3v12m0 0l-4-4m4 4l4-4" />
-                        <path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" />
-                    </svg>
-                    Download the Three Filters Worksheet (PDF)
-                </a>
             </div>
         </div>
     </section>
@@ -953,9 +881,9 @@
                 <ul class="space-y-2">
                     <li><a href="#hero" class="text-sm text-gray-400 hover:text-white transition-colors">Home</a></li>
                     <li><a href="/manifesto" class="text-sm text-gray-400 hover:text-white transition-colors">Manifesto</a></li>
-                    <li><a href="#philosophy" class="text-sm text-gray-400 hover:text-white transition-colors">Philosophy</a></li>
+                    <li><a href="#method" class="text-sm text-gray-400 hover:text-white transition-colors">The Method</a></li>
+                    <li><a href="#philosophy" class="text-sm text-gray-400 hover:text-white transition-colors">Why Complexity Wins</a></li>
                     <li><a href="#book" class="text-sm text-gray-400 hover:text-white transition-colors">The Book</a></li>
-                    <li><a href="#filters" class="text-sm text-gray-400 hover:text-white transition-colors">Three Filters</a></li>
                     <li><a href="#essays" class="text-sm text-gray-400 hover:text-white transition-colors">Essays</a></li>
                     <li><a href="#author" class="text-sm text-gray-400 hover:text-white transition-colors">Author</a></li>
                     <li><a href="#connect" class="text-sm text-gray-400 hover:text-white transition-colors">Connect</a></li>
