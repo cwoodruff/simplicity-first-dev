@@ -59,3 +59,14 @@ Initial setup complete. Scribe protocol workflow validated end-to-end.
 - **Key insight:** Grouped passes reduce review surface area and ensure brand consistency — team executes faster with coherent concern grouping than scattered issue-by-issue fixes
 - **Recommendation for Phase 4:** Expect Flow & Conversion to benefit from same clustering pattern (narrative resequence + visibility toggle as paired concerns)
 
+### 2026-06-06 — Phase 4 ("Flow and Conversion") Kickoff
+- **Status:** Completed (2026-06-06T05:59:17.229-04:00)
+- **Protocol:** Phase 4 assignment merged to decisions.md; learnings appended
+- **Milestone:** "Phase 4: Flow and Conversion" (2 issues)
+- **Assignment:** Both #10 (PRIMARY) and #11 (SECONDARY) routed to Trinity
+- **Pattern validation:** Phase 4 confirms established grouping strategy — narrative resequence (#10) + progressive enhancement (#11) as paired concerns
+- **Sequencing:** #10 (narrative spine reordering) primary; #11 (visibility + scroll-reveal as enhancement) secondary with parallel drafting capability
+- **Downstream planning:** After Phase 4 merge, all homepage narrative/UX work complete. Next phases will route book download flow and contact capture to Switch (Backend Dev)
+- **Acceptance criteria:** Clear; no blockers; Trinity ready for immediate execution
+- **Key insight:** Four consecutive phases following same grouping pattern (Phases 1–4) demonstrates pattern durability and predictive value for velocity estimation
+

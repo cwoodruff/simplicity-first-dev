@@ -106,3 +106,14 @@
 - **Decision Doc:** Written to `.squad/decisions/inbox/neo-phase3-closeout.md` — explains delivery, key metric (scroll reduction), and readiness for Phase 4.
 - **Phase 4 Status:** Ready to proceed. Issues queued.
 - **Milestone Status:** Phase 3 now closed (2 issues resolved, 0 open).
+
+### 2026-06-06 — Phase 4 ("Flow and Conversion") Milestone Triaged & Issues Assigned
+- **Task:** Triage GitHub milestone "Phase 4: Flow and Conversion" (2 issues); assign to Trinity and document sequencing.
+- **Outcome:** All 2 issues assigned and ready to start:
+   - #10, #11 → squad:trinity (narrative spine and progressive enhancement)
+- **Triage rationale:** Both issues are page UX/information architecture work (no backend, data, or code logic). Per routing, page UX → Trinity.
+- **Sequencing:** #10 (PRIMARY) resequences homepage narrative, establishes primary CTA per audience. #11 (SECONDARY) makes all content visible by default; treats scroll-reveal as progressive enhancement. Both can start immediately; #11 logically waits for #10 merge but can draft in parallel.
+- **Pattern:** Phase 4 mirrors Phase 1 (Truth Pass), Phase 2 (Hero Discipline), and Phase 3 (Method in 60s) — grouped editorial/UX work by common concern (flow and conversion). This pattern consistently delivers atomic, verifiable outcomes with reduced review overhead.
+- **Triage comments:** Added clear notes to each issue explaining sequence, rationale, and acceptance criteria.
+- **Decision doc:** Written to `.squad/decisions/inbox/neo-phase4-assignment.md` explaining routing, grouping rationale, and narrative flow.
+- **Parallelism:** Both issues can start in parallel; no cross-layer dependencies; mobile testing required for both.

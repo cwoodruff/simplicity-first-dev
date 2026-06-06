@@ -85,6 +85,35 @@ Phase 3 ("The Method in 60 Seconds") milestone is now **closed**. All 2 method-s
 
 ## Active Decisions
 
+### Decision: Phase 4 ("Flow and Conversion") Triage & Assignment
+- **Author:** Neo (Lead)
+- **Date:** 2026-06-06T05:59:17.229-04:00
+- **Status:** Executed
+
+Triaged GitHub milestone "Phase 4: Flow and Conversion" (2 issues) and assigned both to Trinity as a coordinated narrative/UX pass.
+
+**Issues Assigned:**
+| Issue | Title | Owner | Sequence | Status |
+|-------|-------|-------|----------|--------|
+| #10 | Resequence homepage narrative spine | squad:trinity | PRIMARY | Ready to start |
+| #11 | Make content visible by default; treat scroll-reveal as enhancement | squad:trinity | SECONDARY | Ready to start |
+
+**Triage Rationale:** Both issues are pure page UX/information architecture work. Per `.squad/routing.md`, page UX and forms → Trinity. Form a coherent "flow and conversion" pass with shared context (homepage narrative spine), no cross-layer dependencies, and reduced review overhead when grouped.
+
+**Sequencing:**
+- **#10 (PRIMARY):** Resequence homepage to follow narrative spine (hook → method → economics → proof → book → author → CTA). Demote competing CTAs to secondary visual weight.
+- **#11 (SECONDARY):** Make all sections visible by default (no scroll-reveal gating). Treat fade-in animations as progressive enhancement.
+
+Both can start in parallel. #11 logically waits for #10 merge but can draft in parallel.
+
+**Pattern Observation:** Phase 4 mirrors Phase 1 (Truth Pass), Phase 2 (Hero Discipline), and Phase 3 (Method in 60s) — grouped UI/content/narrative work by common concern reduces review overhead and ensures atomic verifiable completion. Grouping similar concerns into single coordinated passes improves velocity and coherence for UI/content work.
+
+**Acceptance Criteria:**
+- **#10:** Primary CTA identified per audience; homepage sections reordered to follow narrative spine; competing CTAs demoted; smooth transitions; mobile flow tested; "one story" thesis verified
+- **#11:** All sections visible by default; scroll-reveal as progressive enhancement; tested with JavaScript disabled; no empty bands in static renders; prefers-reduced-motion respected
+
+**Next:** Trinity picks up #10 immediately. Both available in parallel. Expect single coordinated PR on `squad/10-phase4-flow-pass` following pattern established by Phases 1–3.
+
 ### Decision: Phase 3 ("Method in 60 Seconds") Triage & Assignment
 - **Author:** Neo (Lead)
 - **Date:** 2026-06-05T21:19:39.121-04:00
