@@ -23,6 +23,32 @@ Phase 1 ("Truth Pass") milestone is now closed. All 4 credibility-fix issues (#1
 
 **Next:** Phase 2 ("Hero Discipline") can now proceed. Issues #5–#7 are queued and ready for assignment.
 
+### Decision: Phase 2 ("Hero Discipline") Closeout
+- **Author:** Neo (Lead)
+- **Date:** 2026-06-05T21:07:09.893-04:00
+- **Status:** Completed
+
+Phase 2 ("Hero Discipline") milestone is now **closed**. All 3 hero issues (#5, #6, #7) are resolved and verified.
+
+**Issues Closed:**
+| Issue | Title | Owner | Status |
+|-------|-------|-------|--------|
+| #5 | Strip generic paragraph from hero sections | Trinity | ✓ Resolved (PR #13) |
+| #6 | Standardize all four heroes on Assessment template | Trinity | ✓ Resolved (PR #13) |
+| #7 | Fix floating logo collision in hero | Trinity | ✓ Resolved (PR #13) |
+
+**Outcome:** Trinity delivered all 3 hero discipline issues grouped into a single coordinated pass on draft PR #13 (squad/5-phase2-hero-pass):
+
+- **Heroes standardized:** Index, Manifesto, AI, and Assessment pages all follow consistent kicker/headline/subline/stats/buttons structure
+- **Generic boilerplate removed:** Tighter, proof-driven copy replaces filler language
+- **Logo collision fixed:** Video repositioned below hero section; no floating overlap
+- **Responsive layout validated:** Desktop and mobile viewports tested; layout holds
+- **Brand consistency verified:** All 4 heroes align on visual treatment and tone
+
+**Key Insight:** Like Phase 1 (Truth Pass), Phase 2 grouping editorial/UX work by common concern (hero discipline) reduced review overhead and ensured consistent delivery. Grouping similar fixes on one branch scales well for cohesive front-end improvements.
+
+**Next:** Phase 3 ("Method in 60s") is now ready to proceed. Issues #8–#9 queued.
+
 ---
 
 ## Active Decisions
