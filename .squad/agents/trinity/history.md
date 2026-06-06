@@ -12,3 +12,4 @@
 
 - 2026-06-05T13:01:28.925-04:00 — Phase 2 hero work grouped on one branch because Index, Manifesto, AI, and Assessment all needed the same hero template pass and responsive verification together.
 - 2026-06-05T21:19:39.121-04:00 — Phase 3 homepage work is best delivered as one method pass because the new section, CTA targets, and compressed philosophy band all change the same scroll narrative.
+- 2026-06-06T05:59:17.229-04:00 — Phase 4 flow work belongs on one homepage branch because the narrative order, CTA hierarchy, and reveal-behavior fix all touch the same `Index.cshtml`/`site.css`/`site.js` surfaces and need one no-JS verification pass.
