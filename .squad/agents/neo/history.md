@@ -95,3 +95,14 @@
 - **Triage comments:** Added clear notes to each issue explaining sequence, rationale, and acceptance criteria.
 - **Decision doc:** Written to `.squad/decisions/inbox/neo-phase3-assignment.md` explaining routing, grouping rationale, and flow.
 - **Parallelism:** Both issues can start in parallel; no cross-layer dependencies; desktop/mobile testing required for #8 card layout.
+
+### 2026-06-05 — Phase 3 ("Method in 60 Seconds") Milestone Closed
+- **Task:** Close Phase 3 milestone and all 2 method-section issues (#8, #9) after verification.
+- **Outcome:** All issues closed and milestone marked complete.
+  - #8 (Three Filters cards) → resolved by Trinity via draft PR #14 (squad/8-phase3-method-pass)
+  - #9 (Philosophy compression) → resolved by Trinity via same PR
+- **Work Delivered:** Method section with three diagnostic cards added directly under hero; philosophy blockquotes compressed from four lengthy quotes to tight "Why Complexity Wins" band, repositioned below method. Responsive layout validated (desktop/tablet/mobile). Homepage flow: hero → method → economics → philosophy → rest.
+- **Key Insight:** Reader now reaches 'The Method' immediately after hero — eliminates scroll-depth friction that previously required 14K+ pixels to navigate. Consistent with Phase 1/2 pattern: grouped editorial work scales reliably and ships atomically.
+- **Decision Doc:** Written to `.squad/decisions/inbox/neo-phase3-closeout.md` — explains delivery, key metric (scroll reduction), and readiness for Phase 4.
+- **Phase 4 Status:** Ready to proceed. Issues queued.
+- **Milestone Status:** Phase 3 now closed (2 issues resolved, 0 open).
