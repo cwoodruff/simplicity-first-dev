@@ -84,3 +84,14 @@
 - **Decision:** EF Core SQLite + new `IContactStore`/`Contact` entity, capture-then-reveal gating. Recorded in decisions inbox.
 - **Key paths:** `SimplicityFirst/Program.cs` (DI), `Services/ISubscriberStore.cs`, `Services/FileSubscriberStore.cs`, `Services/EmailSettings.cs`, `Pages/Index.cshtml(.cs)`, `Pages/Shared/_SubscribeResult.cshtml`.
 - **TEAM UPDATE (Scribe):** Decision merged to decisions.md. Orchestration log created. Ready for task assignment.
+
+### 2026-06-05 — Phase 3 ("Method in 60s") Milestone Triaged & Issues Assigned
+- **Task:** Triage GitHub milestone "Phase 3: The Method in 60 Seconds" (2 issues); assign to Trinity and document sequencing.
+- **Outcome:** All 2 issues assigned and ready to start:
+  - #8, #9 → squad:trinity (Method section and philosophy reflow)
+- **Triage rationale:** Both issues are page UX/content/layout work (no backend, data, or code logic). Per routing, page UX → Trinity.
+- **Sequencing:** #8 (PRIMARY) adds Three Filters card section below hero, removing scroll depth. #9 (SECONDARY) compresses philosophy blockquotes and repositions them below Method section. Both can start immediately; #9 logically waits for #8 merge but can be drafted in parallel.
+- **Pattern:** Phase 3 mirrors Phase 1 (Truth Pass) and Phase 2 (Hero Discipline) — grouped editorial/UX work by common concern (information architecture + narrative flow). This pattern consistently delivers atomic, verifiable outcomes with reduced review overhead.
+- **Triage comments:** Added clear notes to each issue explaining sequence, rationale, and acceptance criteria.
+- **Decision doc:** Written to `.squad/decisions/inbox/neo-phase3-assignment.md` explaining routing, grouping rationale, and flow.
+- **Parallelism:** Both issues can start in parallel; no cross-layer dependencies; desktop/mobile testing required for #8 card layout.

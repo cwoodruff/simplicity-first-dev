@@ -53,6 +53,33 @@ Phase 2 ("Hero Discipline") milestone is now **closed**. All 3 hero issues (#5, 
 
 ## Active Decisions
 
+### Decision: Phase 3 ("Method in 60 Seconds") Triage & Assignment
+- **Author:** Neo (Lead)
+- **Date:** 2026-06-05T21:19:39.121-04:00
+- **Status:** Executed
+
+Triaged GitHub milestone "Phase 3: The Method in 60 Seconds" (2 issues) and assigned both to Trinity as a coordinated UX/content pass.
+
+**Issues Assigned:**
+| Issue | Title | Owner | Sequence | Status |
+|-------|-------|-------|----------|--------|
+| #8 | Add "The Method in 60 Seconds" section with Three Filters cards | squad:trinity | PRIMARY | Ready to start |
+| #9 | Compress and demote philosophy blockquotes | squad:trinity | SECONDARY | Ready to start |
+
+**Triage Rationale:** Both issues are pure page UX/content work (information architecture redesign + card layout + copy writing). Per `.squad/routing.md`, page UX and forms → Trinity. No backend, data, or code-logic dependencies.
+
+**Sequencing:**
+- **#8 (PRIMARY):** Add Three Filters card section below hero; removes scroll depth; reader reaches method immediately post-hero
+- **#9 (SECONDARY):** Compress philosophy blockquotes; depends on #8 merge but can draft in parallel
+
+**Pattern Observation:** Phase 3 mirrors Phase 1 (Truth Pass) and Phase 2 (Hero Discipline) — grouped editorial/UX work by common concern. This strategy consistently delivers reduced review overhead, consistent brand voice, and atomic verifiable completion.
+
+**Acceptance Criteria:**
+- **#8:** Three equal-width cards (responsive); Complexity Trap intro one sentence; brand-consistent styling; no scroll on desktop
+- **#9:** Blockquotes reduced and repositioned; flow validated; word count significantly reduced; responsive tested
+
+**Next:** Trinity picks up #8 immediately. Both available in parallel; Trinity sequences as needed.
+
 ### Decision: Gated Book Download — Contact Capture in SQLite
 - **Author:** Neo (Lead)
 - **Date:** 2026-06-04T19:11:30.363-04:00
