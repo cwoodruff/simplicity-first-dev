@@ -14,8 +14,50 @@
     </div>
 </nav>
 
-<main id="main-content" class="pt-32 pb-24">
-    <article class="max-w-3xl mx-auto px-6">
+<main id="main-content">
+    <section class="hero-pattern relative min-h-screen flex items-center pt-20 overflow-hidden" aria-label="The Simplicity-First Manifesto">
+        <div class="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none" style="background: linear-gradient(135deg, transparent 40%, #E31B23 40%, #E31B23 41%, transparent 41%);"></div>
+
+        <div class="max-w-content mx-auto px-6 py-20 lg:py-32">
+            <div class="max-w-5xl">
+                <p class="text-xs font-semibold uppercase tracking-[4px] text-sf-red mb-6 animate-on-scroll">The Simplicity-First Manifesto</p>
+
+                <h1 class="font-display text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight leading-none animate-on-scroll stagger-1">
+                    Keep the System Understandable, <span class="text-sf-red">Even at 2 AM.</span>
+                </h1>
+
+                <p class="mt-8 text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl animate-on-scroll stagger-2">
+                    Complexity is not sophistication. It is what happens when teams stop asking whether normal humans can still understand and operate what they built.
+                </p>
+
+                <div class="mt-12 flex flex-wrap gap-12 animate-on-scroll stagger-3">
+                    <div class="flex flex-col gap-1">
+                        <span class="font-display text-4xl text-white tracking-wide">3</span>
+                        <span class="text-xs font-semibold uppercase tracking-[3px] text-sf-muted-dark">Filters</span>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="font-display text-4xl text-white tracking-wide">4</span>
+                        <span class="text-xs font-semibold uppercase tracking-[3px] text-sf-muted-dark">Commitments</span>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="font-display text-4xl text-white tracking-wide">1</span>
+                        <span class="text-xs font-semibold uppercase tracking-[3px] text-sf-muted-dark">Hard Question</span>
+                    </div>
+                </div>
+
+                <div class="mt-10 flex flex-col sm:flex-row gap-4 animate-on-scroll stagger-4">
+                    <a href="#manifesto-body" class="inline-flex items-center justify-center px-8 py-4 bg-sf-red hover:bg-sf-red-dark text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                        Read the Manifesto &darr;
+                    </a>
+                    <a href="/ArchAssessment" class="inline-flex items-center justify-center px-8 py-4 border border-sf-border hover:border-sf-red text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                        Architecture Assessment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article id="manifesto-body" class="max-w-3xl mx-auto px-6 pb-24">
         <div class="prose prose-invert prose-sf max-w-none">
             @Html.Raw(Model.HtmlContent)
         </div>

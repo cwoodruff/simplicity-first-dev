@@ -1,7 +1,3 @@
-# The Simplicity-First Manifesto
-
-Because complexity is not a sign of sophistication. It is a sign that we stopped asking the right questions.
-
 ## The Problem
 Software systems are becoming harder to understand, harder to change, and harder to operate. Not because the problems are harder. Because the solutions have outgrown the problems they were built to solve.
 Teams add services, abstractions, layers, and tools in the name of flexibility. Then they discover they can’t ship a feature without touching seven repositories, consulting three teams, and running a deployment pipeline that takes longer than the code change itself.

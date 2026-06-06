@@ -54,57 +54,64 @@
     <!-- ============================================================ -->
     <!-- 2. HERO SECTION                                              -->
     <!-- ============================================================ -->
-    <section id="hero" class="hero-pattern relative min-h-screen flex items-center pt-20" aria-label="Hero">
-        <!-- Diagonal geometric accent -->
+    <section id="hero" class="hero-pattern relative min-h-screen flex items-center pt-20 overflow-hidden" aria-label="Hero">
         <div class="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none" style="background: linear-gradient(135deg, transparent 40%, #E31B23 40%, #E31B23 41%, transparent 41%);"></div>
-        <div class="absolute bottom-20 left-10 opacity-10 pointer-events-none">
-            <div class="diamond" style="width:80px;height:80px;"></div>
-        </div>
 
         <div class="max-w-content mx-auto px-6 py-20 lg:py-32">
-            <div class="lg:flex lg:items-center lg:gap-16">
-                <!-- Logo (large, left on desktop) -->
-                <div class="hidden lg:block lg:flex-shrink-0 animate-on-scroll">
-                    <img src="/images/simplicityfirst.png" alt="Simplicity-First logo" width="280" height="280" class="w-64 xl:w-72" />
+            <div class="max-w-5xl">
+                <p class="text-xs font-semibold uppercase tracking-[4px] text-sf-red mb-6 animate-on-scroll">Simplicity-First</p>
+
+                <h1 class="font-display text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight leading-none animate-on-scroll">
+                    Kill the Bloat. <span class="text-sf-red">Keep the Path Clear.</span>
+                </h1>
+
+                <p class="mt-8 text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl animate-on-scroll stagger-1">
+                    Clear software, sharp architecture, and practical tools for teams that want systems people can understand, change, and trust.
+                </p>
+
+                <div class="mt-12 flex flex-wrap gap-12 animate-on-scroll stagger-2">
+                    <div class="flex flex-col gap-1">
+                        <span class="font-display text-4xl text-white tracking-wide">3</span>
+                        <span class="text-xs font-semibold uppercase tracking-[3px] text-sf-muted-dark">Filters</span>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="font-display text-4xl text-white tracking-wide">7</span>
+                        <span class="text-xs font-semibold uppercase tracking-[3px] text-sf-muted-dark">Book Parts</span>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="font-display text-4xl text-white tracking-wide">4</span>
+                        <span class="text-xs font-semibold uppercase tracking-[3px] text-sf-muted-dark">AI Skills</span>
+                    </div>
                 </div>
 
-                <!-- Text content -->
-                <div class="lg:flex-1">
-                    <div class="lg:hidden flex justify-center mb-10 animate-on-scroll">
-                        <img src="/images/simplicityfirst.png" alt="Simplicity-First logo" width="180" height="180" class="w-44" />
-                    </div>
+                <div class="mt-10 flex flex-col sm:flex-row gap-4 animate-on-scroll stagger-3">
+                    <a href="/manifesto" class="inline-flex items-center justify-center px-8 py-4 bg-sf-red hover:bg-sf-red-dark text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                        Read the Manifesto &rarr;
+                    </a>
+                    <a href="/ArchAssessment" class="inline-flex items-center justify-center px-8 py-4 border border-sf-border hover:border-sf-red text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
+                        Take the Assessment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <h1 class="font-display text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tight leading-none animate-on-scroll">
-                        Kill the <span class="text-sf-red">Bloat.</span>
-                    </h1>
+    <section class="relative py-20 lg:py-24 bg-sf-surface" aria-label="Watch the overview">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="animate-on-scroll">
+                <div class="accent-line mb-6"></div>
+                <h2 class="font-display text-4xl md:text-5xl tracking-tight">Watch the Overview</h2>
+                <p class="mt-4 text-lg text-sf-muted max-w-3xl">A quick walkthrough of the Simplicity-First argument before you dive into the essays, assessment, or tools.</p>
+            </div>
 
-                    <p class="mt-6 text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl animate-on-scroll stagger-1">
-                        Simplicity-First is a movement for developers, architects, and tech leaders who believe software should be clear, maintainable, and built for humans &mdash; not for r&eacute;sum&eacute;s.
-                    </p>
-
-                    <div class="mt-8 text-base text-sf-muted leading-relaxed max-w-2xl animate-on-scroll stagger-2">
-                        <p>We advocate for clear and efficient solutions that eliminate unnecessary complexity. Using intelligent software architecture, practical design, and sharp engineering practices, we equip teams to prioritize simplicity in their projects. We make use of readily available technology and open-source collaboration. We aim to cut out the excess and steer clear of over-engineered designs. Together, we are committed to delivering software that is user-friendly and easy to maintain.</p>
-                    </div>
-
-                    <div class="mt-10 flex flex-col sm:flex-row gap-4 animate-on-scroll stagger-3">
-                        <a href="/manifesto" class="inline-flex items-center justify-center px-8 py-4 bg-sf-red hover:bg-sf-red-dark text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
-                            Read the Manifesto &rarr;
-                        </a>
-                        <a href="#philosophy" class="inline-flex items-center justify-center px-8 py-4 border border-sf-border hover:border-sf-red text-white font-semibold text-sm tracking-wide uppercase transition-colors rounded-sm">
-                            Explore the Philosophy &#8595;
-                        </a>
-                    </div>
-
-                    <div class="mt-12 animate-on-scroll stagger-4">
-                        <div class="w-full max-w-3xl aspect-video">
-                            <iframe class="w-full h-full rounded-sm border-0"
-                                    src="https://www.youtube.com/embed/uky0raorhfk"
-                                    title="Simplicity-First Video"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen>
-                            </iframe>
-                        </div>
-                    </div>
+            <div class="mt-10 animate-on-scroll stagger-1">
+                <div class="w-full aspect-video">
+                    <iframe class="w-full h-full rounded-sm border-0"
+                            src="https://www.youtube.com/embed/uky0raorhfk"
+                            title="Simplicity-First Video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </div>
