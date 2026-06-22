@@ -5,13 +5,6 @@ using SimplicityFirst.Services;
 
 namespace SimplicityFirst.Pages;
 
-public class EssayInfo
-{
-    public string Slug { get; set; } = string.Empty;
-    public string Title { get; set; } = string.Empty;
-    public string Summary { get; set; } = string.Empty;
-}
-
 public class SubscribeResultModel
 {
     public bool Success { get; set; }
@@ -20,14 +13,11 @@ public class SubscribeResultModel
 }
 
 public class IndexModel(
-    IWebHostEnvironment environment,
     ISubscriberStore subscriberStore,
     // TODO: re-enable when confirmation emails are ready
     // IEmailSender emailSender,
     ILogger<IndexModel> logger) : PageModel
 {
-    public List<EssayInfo> Essays { get; private set; } = [];
-
     [BindProperty]
     [Required(ErrorMessage = "Email is required.")]
     [EmailAddress(ErrorMessage = "Please enter a valid email address.")]
@@ -36,7 +26,6 @@ public class IndexModel(
 
     public void OnGet()
     {
-        LoadEssays();
     }
 
     public async Task<IActionResult> OnPostSubscribeAsync()
@@ -83,28 +72,5 @@ public class IndexModel(
         }
 
         return Partial("_SubscribeResult", result);
-    }
-
-    private void LoadEssays()
-    {
-        var essaysPath = Path.Combine(environment.ContentRootPath, "Essays");
-        if (Directory.Exists(essaysPath))
-        {
-            var files = Directory.GetFiles(essaysPath, "*.md");
-            foreach (var file in files)
-            {
-                var slug = Path.GetFileNameWithoutExtension(file);
-                var content = System.IO.File.ReadAllLines(file);
-                var title = content.FirstOrDefault(l => l.StartsWith("# "))?.Substring(2) ?? slug;
-                var summary = content.FirstOrDefault(l => !string.IsNullOrWhiteSpace(l) && !l.StartsWith("#")) ?? "";
-
-                Essays.Add(new EssayInfo
-                {
-                    Slug = slug,
-                    Title = title,
-                    Summary = summary
-                });
-            }
-        }
     }
 }

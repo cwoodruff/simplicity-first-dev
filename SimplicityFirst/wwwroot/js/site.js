@@ -3,21 +3,33 @@
     'use strict';
 
     // --- Intersection Observer for scroll animations ---
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        },
-        { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
-    );
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const canAnimateOnScroll = !prefersReducedMotion && 'IntersectionObserver' in window;
 
-    document.querySelectorAll('.animate-on-scroll').forEach((el) => {
-        observer.observe(el);
-    });
+    if (canAnimateOnScroll) {
+        document.documentElement.classList.add('motion-safe-reveal');
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+        );
+
+        animatedElements.forEach((el) => {
+            observer.observe(el);
+        });
+    } else {
+        animatedElements.forEach((el) => {
+            el.classList.add('is-visible');
+        });
+    }
 
     // --- Sticky nav background on scroll ---
     const nav = document.getElementById('main-nav');
