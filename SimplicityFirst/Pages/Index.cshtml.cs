@@ -44,14 +44,14 @@ public class IndexModel(
             {
                 result.Success = true;
                 result.AlreadySubscribed = true;
-                result.Message = "You're already on the list! We'll email you when the book launches.";
+                result.Message = "You're already on the list! We'll keep you posted on new book resources.";
                 return Partial("_SubscribeResult", result);
             }
 
             await subscriberStore.AddSubscriberAsync(SubscriberEmail);
 
             result.Success = true;
-            result.Message = "You're in! We'll email you when the book launches.";
+            result.Message = "You're in! We'll keep you posted on new book resources.";
 
             // _ = Task.Run(async () =>
             // {
